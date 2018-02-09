@@ -1,0 +1,146 @@
+
+
+#interaction {
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    -webkit-font-smoothing: antialiased;
+}
+
+#interaction:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    
+    border: 1px solid #CECECE;
+  	_background: #F8F8F8 !important;
+	border-radius: 4px; 
+	-moz-border-radius:  4px;  
+  	-webkit-border-radius: 4px;
+    
+    content: " ";
+}
+
+notrans {
+    color: inherit;
+}
+
+
+.text_panel_header {
+  	padding: 0;
+	_font-family: 'Lucida Grande', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 12pt;
+	text-align:left;
+	font-weight: 700;
+	color: #111;
+}
+
+.item {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+    border: 2px dotted #ff8000;
+}
+
+.item.item-rect {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+
+.callout {
+    padding: 10px;
+    
+    opacity: 0 !important;
+    text-align: center;
+    pointer-events: none !important;
+    
+    transition: all .3s ease-out;
+    
+    _background-color: rgba(255,0,0,.1);
+}
+
+.callout .text {
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    
+    transition: all .3s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+.callout .text.transform-left {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.callout .text.transform-right {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+
+.text-align-right.callout .text {
+    text-align: right;
+}
+
+.text-align-left.callout .text {
+    text-align: left;
+}
+
+
+.line-container {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100px;
+    height: 1px;
+    
+    background-color: #666;
+    
+    box-shadow: 0 0 1px 0 #fff;
+}
+
+.line::after {
+    position: absolute;
+    top: -2px;
+    right: -7px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    
+    width: 5px;
+    height: 5px;
+    
+    background-color: #666;
+    content: " ";
+    
+    box-shadow: 0 0 1px 0 #fff;
+}
+
+
+.selected.callout {
+    opacity: 1 !important;
+}
+
+.selected.callout .text {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+
+
+

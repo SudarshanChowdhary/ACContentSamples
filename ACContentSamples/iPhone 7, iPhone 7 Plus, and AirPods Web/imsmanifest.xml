@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-D09E36A10A9A8446F77D16E30175B14B" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p4.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-205C5C76919332D6244E22F82592580A">
+    <organization identifier="ORG-205C5C76919332D6244E22F82592580A" structure="hierarchical">
+      <title>iPhone 7, iPhone 7 Plus, and AirPods</title>
+      <item identifier="ITEM-8DCD535B8AB50D5791798A441E6B9256" isvisible="true">
+        <title>iPhone 7, iPhone 7 Plus, and AirPods</title>
+        <item identifier="ITEM-F21FFE363CDDF31887D57AF177ACE82B" identifierref="RES-3BCD945E88DBC3F5EF56260ACC753D0D" isvisible="true">
+          <title>Introduction</title>
+        </item>
+        <item identifier="ITEM-5783668437041D722A9C14904797FD2F" identifierref="RES-D2F078FEFA3128F8D692AC05B0DEE041" isvisible="true">
+          <title>iPhone 7 and iPhone 7 Plus</title>
+        </item>
+        <item identifier="ITEM-676228113F2CE1E12217F8A9DE8AE6FD" identifierref="RES-297C4BEADCD8FE5E860902D51A355A03" isvisible="true">
+          <title>Apple AirPods</title>
+        </item>
+        <item identifier="ITEM-4DE8C676531B2B8F0606121DE89011AC" identifierref="RES-AC9AB8F131A6199567E458C705089A65" isvisible="true">
+          <title>Conclusion</title>
+        </item>
+      </item>
+      <metadata>
+        <imsmd:lom>
+          <imsmd:general>
+            <imsmd:description>
+              <imsmd:langstring xml:lang="en">This training teaches you the features and functionality of D1x and AirPods.</imsmd:langstring>
+            </imsmd:description>
+          </imsmd:general>
+        </imsmd:lom>
+      </metadata>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-3BCD945E88DBC3F5EF56260ACC753D0D" adlcp:scormtype="sco" href="01a_introduction.html" type="webcontent">
+      <file href="01a_introduction.html" />
+    </resource>
+    <resource identifier="RES-D2F078FEFA3128F8D692AC05B0DEE041" type="webcontent" href="01b_iphone.html" adlcp:scormtype="sco">
+      <file href="01b_iphone.html" />
+    </resource>
+    <resource identifier="RES-297C4BEADCD8FE5E860902D51A355A03" adlcp:scormtype="sco" href="01c_airpods.html" type="webcontent">
+      <file href="01c_airpods.html" />
+    </resource>
+    <resource href="01d_conclusion.html" identifier="RES-AC9AB8F131A6199567E458C705089A65" adlcp:scormtype="sco" type="webcontent">
+      <file href="01d_conclusion.html" />
+    </resource>
+  </resources>
+  <metadata>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="en" />
+        </imsmd:title>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en" />
+        </imsmd:description>
+      </imsmd:general>
+    </imsmd:lom>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+</manifest>
+

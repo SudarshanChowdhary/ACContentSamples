@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?>
+   <data version="2.07" w="490" h="455" frame_rate="60" css_style="main_view" page_marker_fill_color="#6E6E6E" page_marker_visible="false" page_marker_stroke_color="#6E6E6E" page_marker_line_width="2" page_marker_size="5">
+       <slide frames="1" variables="none" name="variables" visible="true" parallax="false" start_frame="0" audio_sync="none">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <variable name="variable_1">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_2">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_3">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_4">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_5">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_6">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_7">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_8">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_9">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_10">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_11">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_12">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_13">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_14">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_15">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_16">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_17">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_18">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_19">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_20">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_21">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_22">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="variable_23">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <timed_event frame="1" action="next_slide" loop="false" enabled="true">
+               </timed_event>
+           </layer>
+       </slide>
+       <slide frames="0" variables="none" name="slide_1" visible="true" parallax="false" start_frame="0" audio_sync="none">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="85" y="180" w="320" h="0" a="#!variable_1!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows network activity.<br><br>Some third-party apps might also use this icon to show active processes.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_2!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[The Play icon indicates that the device is playing a song, audiobook, or podcast.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_3!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device is syncing with iTunes.<br><br>
+You can sync by connecting the device to your computer, or you can set up iTunes to sync wirelessly using Wi-Fi.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_4!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that a 4G UMTS (GSM) network is available, and the device can connect to the Internet over that network.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_5!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that a 3G UMTS (GSM)<br>or EV-DO (CDMA) network is available, and the device can connect to the Internet over that network. ]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_6!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the carrier’s GPRS (GSM) or 1xRTT (CDMA) network is available, and the device can connect to the Internet over that network.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_7!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that an EDGE (GSM) network is available, and the device can connect to the Internet over that network.
+<br><br>
+<span class="footnote">GSM networks: On an EDGE or GPRS connection, incoming calls may go directly to voicemail during data transfers. For incoming calls that you answer, iOS pauses data transfers.</span>]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_8!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that Call Forwarding is on. You must be in range of the cellular network to receive forwarded calls. <br><br><span class="footnote">iOS does not forward FaceTime calls.</span>]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_9!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that TTY is enabled on the device. <br><br>Open Settings > Phone, turn on TTY, and connect the device to your TTY machine using the TTY Adapter.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_10!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that you set an alarm using the Clock app.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_11!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device is connected to the Internet over a Wi-Fi network. More bars indicate a stronger signal.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_12!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows the battery level of a compatible paired Bluetooth device.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_13!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows the device's Bluetooth status.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_14!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows the network connection strength.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_15!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that airplane mode is on—you cannot use the phone, access the Internet, or use Bluetooth. <br><br>Toggling airplane mode is an effective troubleshooting step to resolve network connection issues.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_16!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device's screen orientation is locked.<br /><br />
+To unlock the orientation, swipe up from the bottom of the screen to reveal Control Center, and then tap the screen orientation icon.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_17!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device is locked.<br><br>When the device is locked, nothing happens if you touch the screen. iOS devices can still receive calls, text messages, and other updates.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_18!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows battery level or charging status.<br><br>You can also display the percentage of the battery charge: tap Settings > General > Usage. ]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_19!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that you’re connected to a network using a VPN (virtual private network). ]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_20!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device is connected to another device that provides a Personal Hotspot.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_21!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that the device is using Location Services.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_22!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Shows that an LTE network is available, and the device can connect to the Internet over that network.]]>
+                   </text>
+               </html>
+               <html x="85" y="180" w="320" h="0" a="#!variable_23!#" css_style="popup" shape="none" line_width="4" color="#00EE00" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Indicates that Do Not Disturb is active.]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <image file="images/status_icons_ios_7.png" x="2" y="2" w="479" h="450" a="100" css_style="none" refresh="none">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=100::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="91" y="33" w="48" h="48" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=100::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="149" y="12" w="44" h="40" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=100::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="333" y="42" w="55" h="36" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=100::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="380" y="86" w="50" h="33" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=100::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="396" y="138" w="86" h="36" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=100::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="424" y="195" w="36" h="36" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=100::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="415" y="251" w="44" h="44" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=100::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="384" y="308" w="50" h="42" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=100::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="349" y="357" w="44" h="42" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=100::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="296" y="392" w="50" h="40" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=100::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="251" y="406" w="20" h="43" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=100::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="187" y="408" w="30" h="42" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=100::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="101" y="398" w="82" h="26" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=100::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="68" y="357" w="48" h="40" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=100::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="31" y="308" w="48" h="45" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=100::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="0" y="254" w="74" h="35" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=100::variable_20=0::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="0" y="199" w="58" h="28" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=100::variable_21=0::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="13" y="130" w="55" h="42" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=100::variable_22=0::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="46" y="81" w="44" h="44" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=100::variable_23=0" right_action="none" refresh="none" image="none" css_style="hotspot" x="269" y="14" w="63" h="35" a="100">
+               </button>
+               <button name="none" clicks="1" action="jump>#!current_slide!#[!]variable_1=0::variable_2=0::variable_3=0::variable_4=0::variable_5=0::variable_6=0::variable_7=0::variable_8=0::variable_9=0::variable_10=0::variable_11=0::variable_12=0::variable_13=0::variable_14=0::variable_15=0::variable_16=0::variable_17=0::variable_18=0::variable_19=0::variable_20=0::variable_21=0::variable_22=0::variable_23=100" right_action="none" refresh="none" image="none" css_style="hotspot" x="217" y="0" w="40" h="38" a="100">
+               </button>
+           </layer>
+       </slide>
+   </data>

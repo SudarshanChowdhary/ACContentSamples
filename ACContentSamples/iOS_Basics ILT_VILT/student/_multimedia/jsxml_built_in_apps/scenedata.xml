@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+   <data version="2.10" w="795" h="405" frame_rate="30" css_style="main_view" page_marker_visible="false" page_marker_fill_color="#6E6E6E" page_marker_stroke_color="#6E6E6E" page_marker_line_width="2" page_marker_size="7">
+       <slide frames="1" variables="none" name="variables" visible="true" parallax="false" start_frame="0" audio_sync="none">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <variable name="text_a">
+                   <text>
+                       <![CDATA[0]]>
+                   </text>
+               </variable>
+               <variable name="text_placeholder">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </variable><variable name="text_fmip">
+                   <text>
+                       <![CDATA[<strong>Find My iPhone</strong><br><br>Find My iPhone (or iPad, or iPod touch) helps you locate and secure your iOS device using the free app (available in the App Store) from another iOS device or a web browser. <br><br>Find My iPhone includes Activation Lock, which makes it more difficult for anyone else to use or sell your iPhone if you ever lose it. Your Apple ID and password are required in order to turn off Find My iPhone or to erase and reactivate your device.]]>
+                   </text>
+               </variable>
+               <variable name="text_phone">
+                   <text>
+                       <![CDATA[<strong>Phone</strong><br><br>Phone lets you place and answer phone calls, add Favorites from your Contacts, check your voice mail, and view a list of recent calls. When someone calls, you can answer the call, silence it, send it directly to voicemail, respond with a text message, or remind yourself to return the call later.]]>
+                   </text>
+               </variable>
+               <variable name="text_mail">
+                   <text>
+                       <![CDATA[<strong>Mail</strong><br><br>Mail works with iCloud, Microsoft Exchange, and most popular email systems, and other industry-standard POP3 and IMAP email systems.<br><br>Mail uses the Internet connection to send and receive email, and view PDFs and other attachments.]]>
+                   </text>
+               </variable>
+               <variable name="text_camera">
+                   <text>
+                       <![CDATA[<strong>Camera</strong><br><br>Built-in cameras let you take both still photos and videos. You can also apply special effects, like slow-motion video or panoramic photos. ]]>
+                   </text>
+               </variable>
+               <variable name="text_facetime">
+                   <text>
+                      <![CDATA[<strong>FaceTime</strong><br><br>Use FaceTime to make video or audio calls to other iOS devices or computers that support FaceTime. The FaceTime camera lets you talk face-to-face; switch to the rear iSight camera (not available on all models) to share what you see around you.
+<br /><br />Note: FaceTime may not be available in all areas.]]>
+                   </text>
+               </variable>
+               <variable name="text_messages">
+                   <text>
+                       <![CDATA[<strong>Messages</strong><br><br>Messages supports text messages with other SMS and MMS devices, and with other iOS devices using iMessage. <br><br>With MMS and iMessage, you can also include photos, videos, and other information using the Internet connection.]]>
+                   </text>
+               </variable>
+               <variable name="text_reminders">
+                   <text>
+                       <![CDATA[<strong>Reminders</strong><br><br>Reminders lets you organize your life with lists—complete with due dates and locations.]]>
+                   </text>
+               </variable>
+               <variable name="text_photos">
+                   <text>
+                       <![CDATA[<strong>Photos</strong><br><br>
+                       Photos lets you swipe through photos or watch them in a slideshow.<br><br>You can share specific photos with a group of friends using shared photo streams in iCloud, or post a picture to your Facebook page without leaving the Photos app.]]>
+                   </text>
+               </variable>
+               <variable name="text_calculator">
+                   <text>
+                       <![CDATA[<strong>Calculator</strong><br><br>Tap numbers and functions in the Calculator app just as you would with a standard calculator.<br><br>Rotate the device to landscape orientation to display the scientific calculator.]]>
+                   </text>
+               </variable>
+               <variable name="text_news">
+                   <text>
+                       <![CDATA[<strong>News</strong><br><br>News is an app that collects the stories that you want to read from sources that you're interested in.<br><br>The News app uses the device's Internet connection to check for the latest stories from your favorite news sources all in one place–so you don't need to move from app to app.
+					   </br></br>*Available in English in the U.S., UK, and Australia.]]>
+                   </text>
+               </variable>
+               <variable name="text_notes">
+                   <text>
+                       <![CDATA[<strong>Notes</strong><br><br>Type notes on your device, and iCloud makes them available on your other iOS devices and Mac computers. You can also use Dictation to record notes, and you can print, search, and email your notes.]]>
+                   </text>
+               </variable>
+               <variable name="text_contacts">
+                   <text>
+                       <![CDATA[<strong>Contacts</strong><br><br>Contacts helps you organize all the contact information for Mail, Phone, FaceTime, and more. When you set up your Facebook account on your device, Contacts integrates your Facebook friends' profile information.]]>
+                   </text>
+               </variable>
+               <variable name="text_calendar">
+                   <text>
+                       <![CDATA[<strong>Calendar</strong><br><br>Calendar helps you organize your appointments, birthdays, and other information on your device.]]>
+                   </text>
+               </variable>
+               <variable name="text_safari">
+                   <text>
+                       <![CDATA[<strong>Safari</strong><br><br>Safari is the web browser for iOS.<br><br>With Safari, you can create bookmarks or use bookmarks you sync from iTunes or iCloud, you can add web clips to the Home screen for quick access to your favorite sites, you can print webpages and PDFs, and you can collect sites to read later on your Reading List.<br><br>You can read webpages on your Reading List without an Internet connection.]]>
+                   </text>
+               </variable>
+               <variable name="text_stocks">
+                   <text>
+                       <![CDATA[<strong>Stocks</strong><br><br>Stocks lets you see the latest available quotes for your selected stocks, funds, and indexes.<br><br>You can also ask Siri about your stocks, and use iCloud to keep your stock list up to date on your iOS devices.]]>
+                   </text>
+               </variable>
+               <variable name="text_music">
+                   <text>
+                       <![CDATA[<strong>Music</strong><br><br>Music plays your favorite songs, artists, and albums. To add music to the device, you do the following: <ul><li>Purchase and download content from iTunes.</li><li>Sync content from iTunes on your computer.</li><li>Use Automatic Download to download new music purchased on your other devices.</li><li>Use iTunes Match to store your music library in iCloud.</li></ul> You can also listen to featured stations in iTunes Radio, which is a great way to explore and enjoy new music in a variety of genres, or create custom stations based on your pick of artist, song, or genre.]]>
+                   </text>
+               </variable>
+               <variable name="text_videos">
+                   <text>
+                       <![CDATA[<strong>Videos</strong><br><br>Videos plays movies and TV shows.]]>
+                   </text>
+               </variable>
+               <variable name="text_voice_memos">
+                   <text>
+                       <![CDATA[<strong>Voice Memos</strong><br><br>Voice Memos lets you use your device as a portable recording device using the built-in microphone, Bluetooth headset mic, or supported external microphone. You can send Voice Memos via email, iMessage, or MMS.<br><br>The voice memos from the device appear in the Voice Memos playlist in iTunes.]]>
+                   </text>
+               </variable>
+               <variable name="text_weather">
+                   <text>
+                       <![CDATA[<strong>Weather</strong><br><br>Tap Weather or ask Siri to get the current temperature and six-day forecast for one or more cities around the world. <br><br>Weather also uses Location Services to get the forecast for your current location.]]>
+                   </text>
+               </variable>
+               <variable name="text_game_center">
+                   <text>
+                       <![CDATA[<strong>Game Center</strong><br><br>Discover new games and share your game experiences with friends around the world in Game Center. Invite friends to play, or use auto-match to find worthy opponents.<br><br>To use Game Center, you need an Internet connection and an Apple ID.]]>
+                   </text>
+               </variable>
+               <variable name="text_maps">
+                   <text>
+                      <![CDATA[<strong>Maps</strong><br><br>Maps uses Location Services, Wi-Fi, and cellular data to do the following (certain maps features are available only on iPhone):
+                       <ul><li>Find a location.</li>
+                       <li>Get and share info about a location.</li>
+                       <li>Use the drop pin to mark a location.</li>
+                       <li>Choose standard, hybrid, or satellite view.</li>
+                       <li>Report a problem.</li>
+                       <li>Get directions.</li>
+                       <li>Show traffic conditions.</li>
+                       <li>Use 3D or Flyover view.</li></ul>
+                       ]]>
+                   </text>
+               </variable>
+               <variable name="text_itunes_store">
+                   <text>
+                       <![CDATA[<strong>iTunes Store</strong><br><br>Shop the iTunes Store and browse songs, HD movies, and TV shows, where available.<br><br>You need an Internet connection and Apple ID to purchase content.]]>
+                   </text>
+               </variable>
+               <variable name="text_app_store">
+                   <text>
+                       <![CDATA[<strong>App Store</strong><br><br>You can search for, browse, review, purchase, and download apps from the App Store.<br><br>To browse the App Store, the device must be connected to the Internet. To purchase apps, you need an Apple ID.]]>
+                   </text>
+               </variable>
+               <variable name="text_wallet">
+                   <text>
+                       <![CDATA[<strong>Wallet</strong><br><br>Store your gift cards, coupons, tickets, and other passes in Wallet. <br><br>Like News, Wallet depends on outside sources for content. Developers must design their apps to work with Wallet if they want passes from their apps to appear in Wallet. Wallet uses Location Services to display the correct pass for your location on the lock screen or in the Wallet app.</br></br>You can also add credit and debit cards to Wallet to pay for purchases using Apple Pay.]]>
+                   </text>
+               </variable>
+               <variable name="text_clock">
+                   <text>
+                       <![CDATA[<strong>Clock</strong><br><br>Check the current time in cities around the globe with the world clock. Set an alarm clock, time your morning run, or use the timer while cooking. ]]>
+                   </text>
+               </variable>
+               <variable name="text_compass">
+                   <text>
+                       <![CDATA[<strong>Compass</strong><br><br>The Compass app is all you need to get your bearings. Just hold your phone flat in your hand to see the four cardinal directions and the degrees of each. Or, swipe to the left for a level or inclinometer. ]]>
+                   </text>
+               </variable>
+               <variable name="text_ibooks">
+                   <text>
+                       <![CDATA[<strong>iBooks</strong><br><br>Read books that you purchase from the iBooks Store. Highlight favorite passages, make notes, and let iCloud keep all of your markups in sync. ]]>
+                   </text>
+               </variable>
+               <variable name="text_podcasts">
+                   <text>
+                       <![CDATA[<strong>Podcasts</strong><br><br>Find, subscribe to, and listen to thousands of podcasts about every possible topic. ]]>
+                   </text>
+               </variable>
+               <variable name="text_health">
+                   <text>
+                       <![CDATA[<strong>Health</strong><br><br>Track your heart rate, calories burned, blood sugar, and more with this app. Health works with third-party apps to provide up-to-date information that lets you track your health and fitness goals. ]]>
+                   </text>
+               </variable>
+               <variable name="text_applewatch">
+                   <text>
+                       <![CDATA[<strong>Apple Watch</strong><br><br>Add favorite contacts, use Handoff between devices, organize apps, setup Apple Pay, and more with this app.  ]]>
+                   </text>
+               </variable>
+               <timed_event frame="1" action="next_slide" loop="false" enabled="true">
+               </timed_event>
+           </layer>
+       </slide>
+       <slide name="slide_1" frames="0" variables="none" visible="true" parallax="false" start_frame="0" audio_sync="none">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="0" y="0" w="790" h="0" a="100" css_style="instructions" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Click the app icons to learn more about built-in apps.]]>
+                   </text>
+               </html>
+               <html x="460" y="32" w="295" h="0" a="#!text_a!#" css_style="overlay_light" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="text_holder">
+                   <text>
+                       <![CDATA[<notrans>#!text_placeholder!#</notrans>]]>
+                   </text>
+               </html>
+
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_phone!#::text_a=100" right_action="none" x="0" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/phone_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_mail!#::text_a=100" right_action="none" x="75" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/mail_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_camera!#::text_a=100" right_action="none" x="150" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/camera_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_facetime!#::text_a=100" right_action="none" x="225" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/facetime_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_messages!#::text_a=100" right_action="none" x="375" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/messages_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_reminders!#::text_a=100" right_action="none" x="300" y="30" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/reminders_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_photos!#::text_a=100" right_action="none" x="375" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/photos_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_calculator!#::text_a=100" right_action="none" x="300" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/calculator_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_news!#::text_a=100" right_action="none" x="225" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/news.png">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_notes!#::text_a=100" right_action="none" x="150" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/notes_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_contacts!#::text_a=100" right_action="none" x="75" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/contacts_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_calendar!#::text_a=100" right_action="none" x="0" y="100" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/calendar_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_stocks!#::text_a=100" right_action="none" x="0" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/stocks_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_safari!#::text_a=100" right_action="none" x="150" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/safari_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_music!#::text_a=100" right_action="none" x="225" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/music_icon.png">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_videos!#::text_a=100" right_action="none" x="300" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/videos_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_voice_memos!#::text_a=100" right_action="none" x="375" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/voicememos_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_weather!#::text_a=100" right_action="none" x="225" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/weather_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_game_center!#::text_a=100" right_action="none" x="150" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/gamecenter_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_maps!#::text_a=100" right_action="none" x="75" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/maps_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_itunes_store!#::text_a=100" right_action="none" x="75" y="170" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/itunes_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_app_store!#::text_a=100" right_action="none" x="0" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/appstore_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_wallet!#::text_a=100" right_action="none" x="300" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/wallet.png">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_fmip!#::text_a=100" right_action="none" x="375" y="240" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/findmyphone_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_clock!#::text_a=100" right_action="none" x="0" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/clock_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_compass!#::text_a=100" right_action="none" x="75" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/compass_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_ibooks!#::text_a=100" right_action="none" x="150" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/ibooks_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_podcasts!#::text_a=100" right_action="none" x="225" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/podcasts_icon.jpg">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_health!#::text_a=100" right_action="none" x="300" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/health_icon.png">
+               </button>
+               <button name="none" clicks="1" action="refresh>text_holder[!]text_placeholder=#!text_applewatch!#::text_a=100" right_action="none" x="375" y="310" w="64" h="64" a="100" css_style="hoverbutton" refresh="none" image="images/applewatch_icon.jpg">
+               </button>
+           </layer>
+       </slide>
+   </data>

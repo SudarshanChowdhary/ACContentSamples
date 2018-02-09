@@ -1,0 +1,83 @@
+body {
+	font-family: 'Lucida Grande', Helvetica, sans-serif;
+	font-size:10pt;
+	text-align:left;
+	color: #000000;
+}
+
+.dtButton {
+  	border: 1px solid #000000;
+  	border-radius: 3px;
+  	-moz-border-radius: 3px;
+  	-webkit-border-radius: 3px;
+  	background: #000000;
+	text-align:center;
+	color: #FFFFFF;
+  	cursor: pointer;
+  	cursor: hand;
+  	padding:3px;
+}
+
+.dtButton:hover {
+  	border: 1px solid #000000;
+  	border-radius: 3px;
+  	-moz-border-radius: 3px;
+  	-webkit-border-radius: 3px;
+  	background: #FFFFFF;
+	text-align:center;
+	color: #000000;
+  	cursor: pointer;
+  	cursor: hand;
+  	padding:3px;
+}
+
+.dtSeperator {
+  	border-top: 1px solid #FF0000;
+}
+
+#interaction {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	overflow:hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#loadingDiv{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height:75px;
+	width: 300px;
+}
+
+#loadingImage{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+#loadingText{
+	position: absolute;
+	left: 50%;
+	top: 25px;
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	font-family: 'Lucida Grande', Helvetica, sans-serif;
+	font-size:10pt;
+	text-align:center;
+	color: #000000;
+}

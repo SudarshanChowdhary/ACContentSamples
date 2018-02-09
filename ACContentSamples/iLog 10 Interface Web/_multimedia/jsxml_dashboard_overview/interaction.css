@@ -1,0 +1,328 @@
+#interaction {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.layer_image {
+    position: relative !important;
+}
+.layer_image::after {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    
+    border: 1px solid #ddd;
+    content: " ";
+}
+
+.bg_image {
+    position: relative !important;
+    _height: auto !important;
+    image-rendering: optimizeQuality;
+}
+
+
+/* BLUE_BUTTON_ACTIVE */
+
+.blue_button_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    padding: 5px;
+    border: 2px solid #4DA0EE;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    background: #FFFFFF;  
+	color: #4DA0EE;
+  	cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+	text-align: center;
+  	outline: none !important;
+}
+
+.blue_button_active.on_hover,
+.blue_button_active:hover {
+    background: #4DA0EE;
+    color: #FFF;
+}
+
+/* Buttons */
+.blue_button_active.completed-true .icon::before { 
+    z-index: 1;
+}
+.blue_button_active.completed-true .icon::before {
+    display: block;
+    content: url(images/mark_complete.svg);
+    position: absolute;
+    bottom: -10px;
+    right: -6px;
+    
+    width: 22px;
+    height: 22px;
+    
+    background-color: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+}
+
+.blue_button_active[class*="pointer-"]::before,
+.blue_button_active[class*="pointer-"]::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+	
+    border: solid transparent;
+	content: " ";
+    
+}
+.blue_button_active[class*="pointer-"]::before { border-width: 11px;}
+.blue_button_active[class*="pointer-"]::after { border-width: 8px;}
+
+/* pointer-top */
+.blue_button_active[class*="pointer-top"]::before,
+.blue_button_active[class*="pointer-top"]::after {
+    bottom: 100%;
+    left: 50%;
+}
+.blue_button_active[class*="pointer-top"]::before { border-bottom-color: #4DA0EE; margin-left: -11px;}
+.blue_button_active[class*="pointer-top"]::after { border-bottom-color: #FFF; margin-left: -8px;}
+
+.blue_button_active[class*="pointer-top"].on_hover::after,
+.blue_button_active[class*="pointer-top"]:hover::after { border-bottom-color: #4DA0EE;}
+
+/* pointer-top-left */
+.blue_button_active[class*="pointer-top-left"]::before,
+.blue_button_active[class*="pointer-top-left"]::after {
+    left: 20px;
+}
+/* pointer-top-right */
+.blue_button_active[class*="pointer-top-right"]::before,
+.blue_button_active[class*="pointer-top-right"]::after {
+    right: 20px;
+    left: auto;
+    margin-left: auto;
+}
+.blue_button_active[class*="pointer-top-right"]::before { margin-right: -11px;}
+.blue_button_active[class*="pointer-top-right"]::after { margin-right: -8px;}
+
+/* pointer-left */
+.blue_button_active[class*="pointer-left"]::before,
+.blue_button_active[class*="pointer-left"]::after {
+    top: 50%;
+    right: 100%;
+}
+.blue_button_active[class*="pointer-left"]::before { border-right-color: #4DA0EE; margin-top: -11px;}
+.blue_button_active[class*="pointer-left"]::after { border-right-color: #FFF; margin-top: -8px;}
+
+.blue_button_active[class*="pointer-left"].on_hover::after,
+.blue_button_active[class*="pointer-left"]:hover::after { border-right-color: #4DA0EE;}
+
+/* pointer-left-top */
+.blue_button_active[class*="pointer-left-top"]::before,
+.blue_button_active[class*="pointer-left-top"]::after {
+    top: 20px;
+}
+/* pointer-left-bottom */
+.blue_button_active[class*="pointer-left-bottom"]::before,
+.blue_button_active[class*="pointer-left-bottom"]::after {
+    top: auto;
+    bottom: 20px;
+    margin-top: auto;
+}
+.blue_button_active[class*="pointer-left-bottom"]::before { margin-bottom: -11px;}
+.blue_button_active[class*="pointer-left-bottom"]::after { margin-bottom: -8px;}
+
+/* pointer-right */
+.blue_button_active[class*="pointer-right"]::before,
+.blue_button_active[class*="pointer-right"]::after {
+    top: 50%;
+    left: 100%;
+}
+.blue_button_active[class*="pointer-right"]::before { border-left-color: #4DA0EE; margin-top: -11px;}
+.blue_button_active[class*="pointer-right"]::after { border-left-color: #FFF; margin-top: -8px;}
+
+.blue_button_active[class*="pointer-right"].on_hover::after,
+.blue_button_active[class*="pointer-right"]:hover::after { border-left-color: #4DA0EE;}
+
+/* pointer-right-top */
+.blue_button_active[class*="pointer-right-top"]::before,
+.blue_button_active[class*="pointer-right-top"]::after {
+    top: 20px;
+}
+/* pointer-left-bottom */
+.blue_button_active[class*="pointer-right-bottom"]::before,
+.blue_button_active[class*="pointer-right-bottom"]::after {
+    top: auto;
+    bottom: 20px;
+    margin-top: auto;
+}
+.blue_button_active[class*="pointer-right-bottom"]::before { margin-bottom: -11px;}
+.blue_button_active[class*="pointer-right-bottom"]::after { margin-bottom: -8px;}
+
+/* pointer-bottom */
+.blue_button_active[class*="pointer-bottom"]::before,
+.blue_button_active[class*="pointer-bottom"]::after {
+    top: 100%;
+    left: 50%;
+    margin-top: auto;
+}
+.blue_button_active[class*="pointer-bottom"]::before { border-top-color: #4DA0EE; margin-left: -11px;}
+.blue_button_active[class*="pointer-bottom"]::after { border-top-color: #FFF; margin-left: -8px;}
+
+.blue_button_active[class*="pointer-bottom"].on_hover::after,
+.blue_button_active[class*="pointer-bottom"]:hover::after { border-top-color: #4DA0EE;}
+
+/* pointer-bottom-left */
+.blue_button_active[class*="pointer-bottom-left"]::before,
+.blue_button_active[class*="pointer-bottom-left"]::after {
+    left: 20px;
+}
+/* pointer-bottom-right */
+.blue_button_active[class*="pointer-bottom-right"]::before,
+.blue_button_active[class*="pointer-bottom-right"]::after {
+    right: 20px;
+    left: auto;
+    border-left-color: transparent;
+    margin-left: auto;
+}
+.blue_button_active[class*="pointer-bottom-right"]::before { margin-right: -11px;}
+.blue_button_active[class*="pointer-bottom-right"]::after { margin-right: -8px;}
+
+
+
+/* layer_item */
+.layer_item {
+    overflow: visible !important;
+}
+
+
+
+.fade {
+    transition: opacity .3s linear;
+}
+
+.item {
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    _background: rgba(255,0,0,.1);
+}
+
+
+@keyframes item-show {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.item::before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: 2px solid #FF8000;
+    border-radius: 3px;
+    
+    content: "";
+    opacity: 1;
+    
+    transition: opacity .3s ease-out;
+}
+
+.item_button::before {
+    opacity: 0;
+}
+
+.item:hover::before,
+.item.on_hover::before {
+    opacity: 1 !important;
+}
+
+
+
+.svg_fade {
+    fill: #000;
+    fill-opacity: .25;
+}
+
+.svg_layer {
+    pointer-events: none !important;
+}
+
+.svg_container {
+    pointer-events: none !important;
+    transition: opacity .5s linear;
+}
+
+
+.feedback_layer {
+    pointer-events: none !important;
+}
+
+.feedback_container {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    
+    transition: opacity .3s ease-out;
+}
+
+.show.feedback_container {
+    opacity: 1 !important;
+    
+}
+
+.show.feedback_container .feedback {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+
+.feedback {
+    box-sizing: border-box;
+    padding: 15px 10px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    
+    
+    background-color: #fff;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,.3);
+    text-align: left;
+    pointer-events: none !important;
+    
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    
+    transition: transform .3s ease-out;
+}
+
+
+.feedback > *:first-child { margin-top: 0 !important;}
+.feedback > *:last-child { margin-bottom: 0 !important;}
+
+.feedback img {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback_container .feedback {
+    position: absolute;
+    width: 100%;
+}
+
+.valign-bottom.feedback {
+    bottom: 0;
+}
+.valign-top.feedback {
+    top: 0;
+}
+
+.show-hint.layer_item .item::before {
+    opacity: .4;
+}
+

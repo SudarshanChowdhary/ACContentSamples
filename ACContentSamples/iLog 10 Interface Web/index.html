@@ -1,0 +1,49 @@
+<!--
+SCORM Manifest Player 1.2
+AppleCare
+author: Josh Ives
+revision date: 4/21/2010
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<link href="playerresources/css/grid.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/reset.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgttypography.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgtbuttons.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgtprint.css" media="print" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/forms.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/css-classes.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgt.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="playerresources/js/playerscripts.js"></script>
+		<script type="text/javascript" src="playerresources/js/clientSideInclude.js"></script>
+		<title>iOS Support Training Content Player</title>
+	</head>
+	<body onLoad="buildNav();populateContentFrame();clientSideInclude('includehead', 'header.html')">
+	  <div class="container">
+			<span id="includenav"></span>
+			<div id="framecontentLeft">
+				<span id="includenav"></span>
+				<div class="innertube">
+					<span id="includenav"></span>
+					<div id="tableofcontents">
+						<span id="includenav"></span>
+					</div>
+				</div>
+			</div><span id="includehead"></span>
+			
+			<div id="maincontent">
+				<div id="content" style="height:100%; margin:0px; padding:0px;">
+					<script type="text/javascript">
+					if (window.ActiveXObject){
+						document.write("<iframe name=\"contentFrame\" width=\"100%\" frameBorder=\"0\"; style=\"height:800px; margin:0px; padding:0px;\"></iframe>");
+					}else{
+						document.write("<iframe name=\"contentFrame\" width=\"100%\" style=\"height:99%; margin:0px; padding:0px;\"></iframe>");
+					}
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

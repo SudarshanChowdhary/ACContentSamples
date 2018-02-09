@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8'?>
+   <data version="1.68" w="800" h="560" frame_rate="30" css_style="main_view" page_marker_visible="false" page_marker_fill_color="#6E6E6E" page_marker_stroke_color="#6E6E6E" page_marker_line_width="2" page_marker_size="5">
+       <!-- start -->
+       <slide frames="0" variables="which_next=1" visible="true" name="slide_1" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <variable name="1">
+                   <text>
+                       <![CDATA[Notification Settings]]>
+                   </text>
+               </variable>
+               <variable name="2">
+                   <text>
+                       <![CDATA[App Notification Setting]]>
+                   </text>
+               </variable>
+               <variable name="3">
+                   <text>
+                       <![CDATA[Notification<br>Center]]>
+                   </text>
+               </variable>
+               <variable name="instructions">
+                   <text>
+                       <![CDATA[Click the buttons on the left to learn about using Notification settings and Notifications.]]>
+                   </text>
+               </variable>
+
+            <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+                <image file="images/home_screen.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+  <image file="images/glare.gif" x="506" y="-2" w="289" h="556" a="20" css_style="image">
+               </image>
+          </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+            
+           </layer>
+       </slide>
+       <!-- settings p1 -->
+       <slide frames="0" variables="none" visible="true" name="slide_2" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+
+             <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+               <html x="500" y="0" w="280" h="30" a="100" css_style="white_box_top" shape="none" line_width="2" color="#ffffff" fill_color="FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[ ]]>
+                   </text>
+               </html>
+               <html x="500" y="549" w="280" h="30" a="100" css_style="white_box_bottom" shape="none" line_width="2" color="#ffffff" fill_color="FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[ ]]>
+                   </text>
+               </html>
+
+            <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+               <image file="images/settings_1.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+ 
+  <image file="images/glare.gif" x="506" y="-1" w="289" h="556" a="20" css_style="image">
+               </image>
+               <image file="images/arrow_head_up.png" x="470" y="411" w="20" h="24" a="30" css_style="image">
+               </image>
+               <image file="images/arrow_head_down.png" x="470" y="435" w="20" h="24" a="100" css_style="image">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="180" y="100" w="300" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[You choose what information appears in Notifications and how your device displays alerts in app settings.]]>
+                   </text>
+               </html>
+               <html x="180" y="330" w="240" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Apps that include Notifications settings appear in this list. ]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button_selected" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+              
+               <button clicks="1" action="jump>3" right_action="none" x="470" y="435" w="16" h="18" a="100" css_style="hidden_button" image="none" name="none" refresh="none">
+               </button>
+           </layer>
+       </slide>
+       <!-- settings p2 -->
+       <slide frames="0" variables="none" visible="true" name="slide_3" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+              <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+            <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+               <image file="images/settings_2.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+ 
+  <image file="images/glare.gif" x="506" y="-1" w="289" h="556" a="20" css_style="image">
+               </image>
+               <image file="images/arrow_head_up.png" x="470" y="411" w="20" h="24" a="100" css_style="image">
+               </image>
+               <image file="images/arrow_head_down.png" x="470" y="435" w="20" h="24" a="30" css_style="image">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="180" y="330" w="260" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Tap Sort Order > Manual to arrange the order of app notifications. Touch and drag an app to a new position.]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button_selected" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+          
+               <button clicks="1" action="jump>2" right_action="none" x="470" y="411" w="16" h="18" a="100" css_style="hidden_button" image="none" name="none" refresh="none">
+               </button>
+           </layer>
+       </slide>
+       <!--app-messages setting p1 -->
+       <slide frames="0" variables="none" visible="true" name="slide_4" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+           <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+             <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+               <image file="images/calendar_settings_1.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+ 
+  <image file="images/glare.gif" x="506" y="-1" w="289" h="556" a="20" css_style="image">
+               </image>
+
+           
+               <image file="images/arrow_head_up.png" x="470" y="411" w="20" h="24" a="30" css_style="image">
+               </image>
+               <image file="images/arrow_head_down.png" x="470" y="435" w="20" h="24" a="100" css_style="image">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="180" y="150" w="280" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Tap an app name to set its notification options. To show the app in Notifications, slide the button right to turn this on.</br></br>Some apps have multiple notification options for you to choose what information appears in Notifications.]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button_selected" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+            
+               <button clicks="1" action="jump>5" right_action="none" x="470" y="435" w="16" h="18" a="100" css_style="hidden_button" image="none" name="none" refresh="none">
+               </button>
+           </layer>
+       </slide>
+       <!-- app-messages setting p2 -->
+       <slide frames="0" variables="none" visible="true" name="slide_5" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+
+             <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+             <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+               <image file="images/calendar_settings_2.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+ 
+  <image file="images/glare.gif" x="506" y="-1" w="289" h="556" a="20" css_style="image">
+               </image>
+
+          
+               <image file="images/arrow_head_up.png" x="470" y="411" w="20" h="24" a="100" css_style="image">
+               </image>
+               <image file="images/arrow_head_down.png" x="470" y="435" w="20" h="24" a="30" css_style="image">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="180" y="298" w="280" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[Tap a setting to select the app's alert style here. Badge App Icon displays the red numbered badges on apps with notifications.</br></br>You can view a notification from the Lock screen.]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button_selected" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+       
+               <button clicks="1" action="jump>4" right_action="none" x="470" y="411" w="16" h="18" a="100" css_style="hidden_button" image="none" name="none" refresh="none">
+               </button>
+           </layer>
+       </slide>
+       <!-- slide #7 - notification center pull-down -->
+       <slide frames="30" variables="none" visible="true" name="slide_7" start_frame="0" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <html x="0" y="0" w="480" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!instructions!#</notrans>]]>
+                   </text>
+               </html>
+             <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+               <image file="images/home_screen.png" x="535" y="91" w="210" h="373" a="100" css_style="image">
+               </image>
+ 
+  <image file="images/glare.gif" x="506" y="-1" w="289" h="556" a="20" css_style="image">
+               </image>
+                   <image file="images/notification_center_portrait.png" x="521" y="-290" w="210" h="373" a="100" css_style="image">
+                   <animation>
+                       <keyframe frame="0" x="534" y="-290" w="210" h="373" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="15" x="534" y="-290" w="210" h="373" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="25" x="534" y="90" w="210" h="373" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="534" y="90" w="210" h="373" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <html x="500" y="0" w="290" h="30" a="100" css_style="white_box_top" shape="none" line_width="2" color="#00EE00" fill_color="FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[ ]]>
+                   </text>
+               </html>
+               <html x="500" y="549" w="290" h="30" a="100" css_style="white_box_bottom" shape="none" line_width="2" color="#00EE00" fill_color="FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[ ]]>
+                   </text>
+               </html>
+             <image file="images/frame_black_289x556_window.gif" x="514" y="15" w="248" h="520" a="100" css_style="image">
+               </image>
+                        <image file="images/glare.gif" x="506" y="-2" w="289" h="556" a="20" css_style="image">
+               </image>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+           
+               <image file="images/finger.gif" x="500" y="600" w="500" h="862" a="100" css_style="image">
+                   <animation>
+                       <keyframe frame="0" x="500" y="600" w="500" h="862" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="500" y="100" w="500" h="862" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="15" x="500" y="100" w="500" h="862" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="25" x="500" y="480" w="500" h="862" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="500" y="600" w="500" h="862" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <html x="180" y="110" w="240" h="0" a="100" css_style="description" shape="none" line_width="2" color="#000000" fill_color="#FFFFFF" refresh="none">
+                   <text>
+                       <![CDATA[To reveal Notifications from the Home screen or an app, swipe down from the top of the screen.]]>
+                   </text>
+               </html>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none">
+               <button clicks="1" action="jump>2" right_action="none" x="0" y="150" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!1!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>4" right_action="none" x="0" y="210" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!2!#</notrans>]]>
+                   </text>
+               </button>
+               <button clicks="1" action="jump>6" right_action="none" x="0" y="267" w="125" h="0" a="100" css_style="side_button_fade" image="none" name="none" refresh="none">
+                   <text>
+                       <![CDATA[<notrans>#!3!#</notrans>]]>
+                   </text>
+               </button>
+         
+           </layer>
+       </slide>
+  
+   </data>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loopSlider>
+	<image file="images/image_01.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[Touch and hold an app until the Home screen icons begin to jiggle.]]></caption>
+	</image>
+	<image file="images/image_02.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[Drag the app onto another app.]]></caption>
+	</image>
+	<image file="images/image_03.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[The iOS device creates a new folder that includes the two apps.]]></caption>
+	</image>
+	<image file="images/image_04.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[Press the Home button to save.]]></caption>
+	</image>
+	<image file="images/image_05.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[Your folder is on the Home screen.]]></caption>
+	</image>
+</loopSlider>

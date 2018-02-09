@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loopSlider>
+	<image file="images/image_01.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[1. Tap Settings.]]></caption>
+	</image>
+	<image file="images/image_02.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[2. Locate and tap the General icon, located in the third group from the top.]]></caption>
+	</image>
+	<image file="images/image_03.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[3. Scroll to the bottom, then locate the fourth group up from the bottom. Tap the third item of that group (Language & Region).]]></caption>
+	</image>
+	<image file="images/image_04.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[4. Tap the first setting in the list (iPhone Language).]]></caption>
+	</image>
+	<image file="images/image_05.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[Enter your language in the search field. Then, tap your language in the list.]]></caption>
+	</image>
+	<image file="images/image_06.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[6. Tap the button at the top right (Done).]]></caption>
+	</image>
+	<image file="images/image_07.png">
+		<altText><![CDATA[Add alt text here]]></altText>
+		<caption><![CDATA[7. Tap the first item in the window, Change to English (United States).]]></caption>
+	</image>
+</loopSlider>

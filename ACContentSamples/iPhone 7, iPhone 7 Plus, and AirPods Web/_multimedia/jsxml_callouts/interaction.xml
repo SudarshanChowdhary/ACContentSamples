@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data w="900" h="660" background_color="" css_style="">
+    <slide name="init" variables="">
+        <layer name="layer_init" x="0" y="0" w="100%" h="100%" a="0">
+            <array name="callout_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[Optical sensors]]></value>
+                <value><![CDATA[Microphones]]></value>
+                <value><![CDATA[Lightning pin connector]]></value>
+                <value><![CDATA[Serial number (inside of lid)]]></value>
+                <value><![CDATA[LED Light]]></value>
+                <value><![CDATA[Left AirPod charging port]]></value>
+                <value><![CDATA[Right AirPod charging port]]></value>
+                <value><![CDATA[Setup button]]></value>
+            </array>
+            
+            <variable name="empty_var" value=""></variable>
+            <variable name="current_item" value="0"></variable>
+
+            <action_set name="item_me" global="true">
+                <action do="callout_#!current_item!#.addCssStyle(selected)"></action>
+            </action_set>
+            <action_set name="item_ml" global="true">
+                <action do="callout_#!current_item!#.removeCssStyle(selected)"></action>
+            </action_set>
+            
+            <timed_event name="timer1" frame="0" repeat="0" action="next_slide" enabled="true">
+            </timed_event>
+        </layer>
+    </slide>
+    <slide name="slide_2" variables="">
+        <layer name="layer_item" x="0" y="0" w="100%" h="100%" a="100" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">    
+            <image x="155" y="60" w="590" h="224" a="100" file="images/earpods_1.png"></image>
+            <image x="40" y="340" w="330" h="286" a="100" file="images/earpods_2.png"></image>
+            <image x="585" y="340" w="240" h="290" a="100" file="images/earpods_3.png"></image>
+            
+            <html name="item_1" x="191" y="105" w="30" h="30" css_style="item" onMouseEnter="current_item=1::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_1b" x="677" y="105" w="30" h="30" css_style="item" onMouseEnter="current_item=1::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            
+            <html name="item_2" x="185" y="238" w="50" h="50" css_style="item" onMouseEnter="current_item=2::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_2b" x="220" y="158" w="35" h="35" css_style="item" onMouseEnter="current_item=2::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_2c" x="660" y="238" w="50" h="50" css_style="item" onMouseEnter="current_item=2::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_2d" x="640" y="158" w="35" h="35" css_style="item" onMouseEnter="current_item=2::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            
+            <html name="item_3" x="420" y="210" w="70" h="70" css_style="item" onMouseEnter="current_item=3::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            
+            <html name="item_4" x="138" y="394" w="130" h="20" css_style="item item-rect" onMouseEnter="current_item=4::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_5" x="188" y="504" w="30" h="30" css_style="item" onMouseEnter="current_item=5::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_6" x="140" y="544" w="60" h="60" css_style="item" onMouseEnter="current_item=6::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            <html name="item_7" x="208" y="544" w="60" h="60" css_style="item" onMouseEnter="current_item=7::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            
+            <html name="item_8" x="679" y="533" w="50" h="50" css_style="item" onMouseEnter="current_item=8::item_me" onMouseLeave="item_ml">
+                <![CDATA[<notrans></notrans>]]>
+            </html>
+            
+            <html name="callout_1" x="390" y="5" w="100" css_style="callout">
+                <![CDATA[<notrans><div class='text'>#!callout_txt[1]!#</div><div class='line-container' style='bottom: 0; left: 0; transform: rotate(157deg);'><span class='line' style='width: 170px;' /></div><div class='line-container' style='bottom: 0; right: 0; transform: rotate(22deg);'><span class='line' style='width: 170px;' /></div></notrans>]]>
+            </html>
+            
+            <html name="callout_2" x="390" y="340" w="100" css_style="callout">
+                <![CDATA[<notrans><div class='text'>#!callout_txt[2]!#</div><div class='line-container' style='top: 0; left: 0; transform: rotate(-155deg);'><span class='line' style='width: 150px;' /></div><div class='line-container' style='top: 0; left: 0; transform: rotate(-133deg);'><span class='line' style='width: 185px;' /></div><div class='line-container' style='top: 0; right: 0; transform: rotate(-25deg);'><span class='line' style='width: 150px;' /></div><div class='line-container' style='top: 0; right: 0; transform: rotate(-47deg);'><span class='line' style='width: 185px;' /></div></notrans>]]>
+            </html>
+            
+            <html name="callout_3" x="395" y="340" w="100" css_style="callout">
+                <![CDATA[<notrans><div class='text'>#!callout_txt[3]!#</div><div class='line-container' style='top: 0; left: 50%; transform: rotate(-90deg);'><span class='line' style='width: 70px;'/></div></notrans>]]>
+            </html>
+            
+            <html name="callout_4" x="400" y="380" w="120" css_style="callout text-align-left">
+                <![CDATA[<notrans><div class='text transform-left'>#!callout_txt[4]!#</div><div class='line-container' style='top: 50%; left: 0; transform: rotate(-180deg);'><span class='line' style='width: 115px;'/></div></notrans>]]>
+            </html>
+            
+            <html name="callout_5" x="420" y="503" w="120" css_style="callout text-align-left">
+                <![CDATA[<notrans><div class='text transform-left'>#!callout_txt[5]!#</div><div class='line-container' style='top: 50%; left: 0; transform: rotate(-180deg);'><span class='line' style='width: 185px;'/></div></notrans>]]>
+            </html>
+            
+            <html name="callout_6" x="390" y="550" w="120" css_style="callout text-align-left">
+                <![CDATA[<notrans><div class='text transform-left'>#!callout_txt[6]!#</div><div class='line-container' style='top: 50%; left: 0; transform: rotate(-180deg);'><span class='line' style='width: 200px;'/></div></notrans>]]>
+            </html>
+            
+            <html name="callout_7" x="390" y="550" w="120" css_style="callout text-align-left">
+                <![CDATA[<notrans><div class='text transform-left'>#!callout_txt[7]!#</div><div class='line-container' style='top: 50%; left: 0; transform: rotate(-180deg);'><span class='line' style='width: 130px;'/></div></notrans>]]>
+            </html>
+            
+            <html name="callout_8" x="385" y="540" w="120" css_style="callout text-align-right">
+                <![CDATA[<notrans><div class='text transform-right'>#!callout_txt[8]!#</div><div class='line-container' style='top: 50%; right: 0; transform: rotate(0deg);'><span class='line' style='width: 144px;'/></div></notrans>]]>
+            </html>
+        </layer>
+    </slide>
+</data>

@@ -1,0 +1,214 @@
+/* Some default SGT ids and classes
+-------------------------------------------------------------- */
+body 						{ color: #111;  font: 100% font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif;}
+h1,h2,h3,h4,h5,h6,p,ul,ol,li,th,td,tr,question,answer,q,a,imgcaption,foot { font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif;
+  color: #111;}
+
+/* IE Scroll Bar Fix */
+html 						{overflow: auto;}
+
+  
+h1 { font-size: 22px; font-weight: bold; margin-top: 29px; }
+h2 { font-size: 19px; font-weight: bold; margin-bottom: 8px; margin-top: -8px;}
+h3 { font-size: 16px; font-weight: bold; margin-bottom: 2px; margin-top: -6px;}
+h4 { font-size: 14px; font-weight: bold; margin-bottom: 2px; margin-top: 8px; }
+h5 { font-size: 11px; font-weight: bold; margin-bottom: 18px;}
+h6 { font-size: 10px; font-weight: bold; }
+
+
+.container 					{ width: 100%; margin: 0 auto;}
+#content p					{ margin: 0 0 12px 0; line-height: 130%; font-size: 12.5px;}
+#content span._updatedcontent { margin: 0 0 12px 0; line-height: 130%; font-size: 12.5px; color: #e17100;}
+#content span._toreview  	{ margin: 0 0 12px 0; line-height: 130%; font-size: 12.5px; color: #ff0000;}
+#content ul 	      		{ margin: 0 0 18px 30px; list-style-type: disc;  font-size: 12.5px;}
+#content ul li				{ line-height: 130%; margin: 0 0 5px 2.5px;}
+#content ol 	      		{ margin: 0 0 15px 35px; list-style-type: decimal;  font-size: 12.5px; }
+#content ol li              { line-height: 130%; margin: 0 0 15px 2.5px;}
+#content img				{ float: none; display: block; margin-left: auto; margin-top: 7px; margin-right: auto; margin-bottom: 23px; }
+
+
+/*Nav  */
+#framecontentLeft h5 		{ color:#000; font-size: 11.5px; font-weight: bold; margin-top: -13px;  font-weight:none;}
+#framecontentLeft ul		{ font-size: 11.5px; margin-top: -20px; margin-bottom: 20px; list-style: none;}
+#framecontentLeft li        { font-size: 11.5px; margin-left: 6px; line-height: 140%; margin-right: 5px;}
+#framecontentLeft h6 		{ font-size: 9px; line-height: 120%; margin-top: -10px;}
+div#tableofcontents ul li a { padding-left: 12px;}
+div#tableofcontents ul li a:visited {color:#551A8B; background: url(../images/checkmark.png) no-repeat; background-position: 0px 3px;}
+
+/* Use this to right-align images */
+#content img.right			{ float: right; margin-top: -2px;} 
+
+
+/* Use this to align images inline in sentences */
+#content img.inline			{ float: none; display: inline; margin: 0 0 0 0; vertical-align: text-bottom;} 
+
+
+ /* Use this to center objects like SWF files */
+#content object			   	{ float: none; display: block; margin-left: auto; margin-top: 7px; margin-right: auto; margin-bottom: 20px; }
+#content .imgcaption		{ font-size: 12px; text-align: center; margin-top: -17px; margin-bottom: 25px;}
+blockquote 					{ margin: 0 0 18px 30px;  font-size: 12.5px;}
+strong      				{ font-weight: bold; }
+em,dfn     				    { font-style: italic; background: #ffc; }
+dfn        				    { font-weight: bold; }
+pre,code    				{ margin: 20px 0; white-space: pre; }
+pre,code,tt 				{ font: 12.5px 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
+tt          				{ display: block; margin: 20px 0; line-height: 1.5; }
+a 							{ color: #336699;}
+a:hover						{ color: #666;}
+hr 							{ margin: 4% 0;}
+/* Use this to create a horizontal ruler across a column. */
+hr.thin						{ margin: 0 0 11px;}
+hr.thinspace				{ margin: 0 0 11px; background: #fff; color: #fff;}
+em, dfn						{ background: none;}
+em.instruct, dfn.instruct	{ background: #ffc;}
+
+/* Tables
+-------------------------------------------------------------- */
+#maincontent table.center   { margin-bottom: 25px; margin-left: auto; margin-right: auto;}
+#mytable  					{ margin-left: 17px; width: auto; padding: 0; margin: 0; font-size: 12px;}
+#mytable li				    { color: #435B64; margin-left: -5px;}
+#mytable td			        { font-size: 12px; vertical-align:middle; color: #435B64; font-weight: normal; text-align: left; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7;  padding: 3px 6px 3px 6px;}
+td.alt 						{ background: #F5FAFA; color: #435B64;}
+th 							{ color: #435B64; vertical-align:middle; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; border-left: 1px solid #C1DAD7; text-align: left; padding: 3px 6px 3px 6px; background: #fff; font-weight: bold;}
+th.alt 					    { border-left: 1px solid #C1DAD7; border-top: 0; background: #F5FAFA;  }
+th.colhead 				    { border-left: 0; border-top: 1px solid #C1DAD7; background: #CAE8EA; font-weight: bold;}
+th.colheadleft 				{ border-left: 1px solid #C1DAD7; border-top: 1px solid #C1DAD7; background: #CAE8EA; font-weight: bold;}
+th.colheadright 		    { border-left: 0; border-right: 1px solid #C1DAD7; border-top: 1px solid #C1DAD7; background: #CAE8EA; font-weight: bold;}
+th.coldarkhead				{ border-left: 0;  background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+th.coldarkheadleft			{ border-left: 0; background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+th.coldarkheadright			{ border-left: 0;  border-right: 1px solid #C1DAD7; background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+
+/*The column headings that span entire extremely complex table use this class - the borders are different than the colheadclass the simple and complex tables use. */
+th.colheadspec 				{ border-top: 0; border-left: 1px solid #C1DAD7; background: #CAE8EA; font-weight: bold;}
+
+th.nobg 					{ border-top: 0; border-left: 0; border-right: 1; background: none;}
+
+/* Audience Grid */
+#audgrid 					{ width: 600px;	padding: 0;	margin: 0; margin-bottom: 25px; margin-left: 15px; margin-right: 15px;}
+#audgrid th				{ vertical-align: middle; text-align: left; font-size: 11.5px; padding: 1px 1px 1px 6px;}
+#audgrid th.spechead 		{ border-left: 1px solid #C1DAD7; border-top: 0; background: #CAE8EA; font: bold 11.5px;}
+
+#audgrid th.coldarkhead    { border-left: 0; width: 15%; border-left: 0; padding: 2px 2px 2px 5px; font-size: 11.5px; background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+#audgrid th.coldarkheadleft{ width: 15%; padding: 2px 2px 2px 5px; font-size: 11.5px; background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+#audgrid th.coldarkheadright      { width: 15%; border-left: 0;  border-right: 1px solid #C1DAD7; padding: 2px 2px 2px 5px; font-size: 11.5px; background: #4f6b72; color: #F5FAFA; font-weight: bold; text-align: center;}
+#audgrid td				{ color: #435B64; vertical-align:middle; text-align: center; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; margin-left: -5px; font-size: 11.5px;}
+
+
+/* Table Footers */
+#audgrid th.foot 			{ border: 0; background: none; color:#000; font-size: 11px; font-weight: normal; font-style: italic; line-height:145%}
+tfoot   					{ font-style: italic; }
+
+/* Tables used as layout grids (for images and callouts or side-by-side comparisons) */
+#gridtable		{
+	border: 0;
+	width: auto;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+#gridtable td		    { vertical-align: top; }
+#gridtable p            { font-size: 12px; text-align: center; margin-top: 5px; }
+#gridtable li           { font-size: 12px; text-align: center; margin-top: 5px; line-height: 100%; margin: 0;}
+#gridtable img		    { margin: 0;}
+#gridtable ol li             { font-size: 12px; text-align: left; margin-top: 5px; line-height: 100%; margin: 0 0 5px 0;}
+#gridtable ul li             { font-size: 12px; text-align: left; margin-top: 5px; line-height: 100%; margin: 0 0 5px 0;}
+
+
+
+/* Noteboxes*/
+#content .notebox			{ width: 80%; margin-top: 20px; margin-bottom: 20px; margin-left: 17px;  border: 2px double #C1DAD7;  padding:6px; color:#000; background:#F5FAFA; min-height: 40px; }
+#content .notebox p			{
+	font-size: 12.5px;
+	margin-bottom: -0.1px;
+}
+#content .notebox img		{ margin-top: -25px; margin-right: 10px; margin-bottom: 5px; float:left; padding:0px;}
+
+/*Label not used
+#content .notebox h6		{ font-size: 13px bold; margin-left: 50px; margin-top: -25px; margin-bottom: -.18px;}*/
+
+
+/* Header*/
+.apple a, .apple a:hover    { text-decoration:none; color:#000; font-size: 22px;}
+.up-hrule					{ margin-top: 32px;}
+.up-htext 					{ font-size: 22px; font-weight:bold; text-align: right; margin-top:-52px;}			
+#framecontentTop img        { text-align: right; margin-bottom: -34px;}
+
+/* Footer*/
+.legal-notice				{ font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif; color: gray; font-size: 10px; padding-bottom: 1em;}
+
+
+/*  BEGIN DEFAULT FRAMES */
+
+#framecontentLeft, #framecontentTop{
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 260px; /*Width of left frame div*/
+height: auto;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+}
+
+#framecontentLeft{ 
+position: absolute; top: 76px; /*Set top value to HeightOfTopFrameDiv*/
+overflow: hidden;}
+
+#framecontentTop{ 
+right: 0;
+width: auto;
+height: 90px; /*Height of top frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+}
+
+#maincontent{
+position: absolute; /*updated 11-26-08 for IE6; was 'fixed'*/ 
+left: 260px; /*Set left value to WidthOfLeftFrameDiv*/
+top: 90px; /*Set top value to HeightOfTopFrameDiv*/
+right: 0;
+bottom: 0;
+overflow: auto;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+/*  END DEFAULT FRAMES */
+
+
+
+/* Layout properties for SHOW/HIDE Test Yourself Questions  */
+.question		{ font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif;
+   cursor:pointer;	/* Cursor is like a hand when someone rolls the mouse over the question */ width: 95%; border: 2px double #C1DAD7; padding:6px; font-size: 12px; color:#000; background:#F5FAFA; margin-top: -.6em; margin-bottom: 1.25em;}
+
+.answer 		{ /* Layout properties - You can change these */ 
+							font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif;
+  color: #111; width: 95%; padding:3px; border-left: 2px double #C1DAD7; border-right: 2px double #C1DAD7; border-bottom: 2px double #C1DAD7; border-top:none; padding:6px; margin-top: -1.25em; font-size: 12.5px; color:#fff; background:#666666; margin-bottom: 1.25em;
+							/* This one should not be changed */
+							display:none; }
+
+.answer a {color:#FFFFFF;}
+.answer a:hover {color:#FFFFCC;}
+
+#content .qa						{ margin-bottom: 25px;}
+#content .qa img			        { display: block; margin-left: auto; margin-top: 6px; margin-bottom: 25px; margin-right: auto; }
+#content .qa ol			        { margin: -10px 0px 10px 35px; !important} 
+#content .qa li			        { list-style-type: upper-alpha; line-height: 130%; margin: 0px 0px -.5px 2.5px; !important} 
+#content .qa p			{ font-size: 13px; font-weight: bold; margin-top: 18px; !important}
+		
+		
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clear { display: inline-block; }   
+.clear:after, .container:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+* html .clear { height: 1%; }
+.clear { display: block; }

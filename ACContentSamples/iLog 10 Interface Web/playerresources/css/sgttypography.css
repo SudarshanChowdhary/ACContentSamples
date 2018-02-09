@@ -1,0 +1,148 @@
+/* -------------------------------------------------------------- 
+   
+   typography.css
+   * Sets up some sensible default typography.
+  
+   Based on work by:
+   * Nathan Borror     [playgroundblues.com]
+   * Jeff Croft        [jeffcroft.com]
+   * Christian Metts   [mintchaos.com]
+   * Wilson Miner      [wilsonminer.com]
+   * Richard Rutter    [clagnut.com]
+   
+   Read more about using a baseline here:
+   * alistapart.com/articles/settingtypeontheweb
+  
+-------------------------------------------------------------- */
+
+/* This is where you set your desired font size. The line-heights 
+   and vertical margins are automatically calculated from this. 
+   The percentage is of 16px (0.75 * 16px = 12px).
+   Default fonts and colors. 
+   If you prefer serif fonts, remove the font-family 
+   on the headings, and apply this one to the body:
+   font: 1em Georgia, "lucida bright", "times new roman", serif; */
+   
+/* Already in sgt.cssbody { 
+  color: #111; 
+  font-family: "Lucida Grande",Arial,Helvetica,Verdana,Sans-Serif;}
+h1,h2,h3,h4,h5,h6 { 
+  color: #111;}
+
+
+/* Headings
+-------------------------------------------------------------- 
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+
+h1 { font-size: 300%; line-height: normal; margin-bottom: 0.5em; }
+h2 { font-size: 200%; margin-bottom: 0.75em; }
+h3 { font-size: 150%; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 120%; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }*/
+
+/* Tables
+-------------------------------------------------------------- 
+
+table   	{ margin-bottom: 1.4em; }
+#mytable 	{ width: 740px;	padding: 0;	margin: 0; font-size: 12px; }
+caption 	{ padding: 0 0 5px 0; width: 740px;	font-style: italic;	text-align: right;}
+th 			{ font-weight: bold; color: #435B64; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; border-top: 1px solid #C1DAD7; text-transform: uppercase;	text-align: left; padding: 6px 6px 6px 6px; background: #CAE8EA;}
+th.nobg 	{ border-top: 0; border-left: 0; border-right: 1px solid #C1DAD7; background: none;}
+td 			{ font-weight: bold; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; background: #fff; padding: 6px 6px 6px 12px; color: #435B64; text-align: center; font-size: 12px;}
+td.alt 		{ background: #edfaf9;}
+th.spec 	{ border-left: 1px solid #C1DAD7; border-top: 0; background: #fff; font: bold 10px; width:150px;}
+th.specalt 	{ border-left: 1px solid #C1DAD7; border-top: 0; background: #edfaf9; font: bold 10px;}
+th.spechead { border-left: 1px solid #C1DAD7; border-top: 0; background: #CAE8EA; font: bold 10px;}
+tfoot   	{ font-style: italic; } 
+*/
+
+/* Text elements
+-------------------------------------------------------------- 
+
+p           { margin: 0 0 1.5em; }
+p.last      { margin-bottom: 0; }
+p img       { margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>. 
+img         { margin: 0 0 1.5em; }
+img.center	{ display: block; margin-left: auto; margin-right: auto; } /* Use this to center the image */*/*/
+
+
+img.left    { float:left;}
+img.right   { float:right;}
+
+ul, ol      { margin:0 1.5em 1.5em 1.5em; }
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin-top: 1.5em; font-style: italic; }
+del         { color:#666; }
+
+a:focus, 
+a:hover     { color: #000; }
+a           { color: #009; text-decoration: underline; }
+
+blockquote  { margin: 1.5em; font-style: italic; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; background: #ffc; }
+dfn         { font-weight: bold; }
+pre,code    { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; } 
+tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
+
+
+
+
+/* Use this if you use span-x classes on th/td. */
+table .last { padding-right: 0; }
+
+
+/* Some default classes
+-------------------------------------------------------------- */
+/* Not used in this version of SGT: 2008-09-02
+.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.quiet      { color: #666; }
+
+
+.hide       { display: none; }
+.highlight  { background:#ff0; }
+.added      { color:#060; }
+.removed    { color:#900; }
+-------------------------------------------------------------- */
+
+.top        { margin-top:0; padding-top:0; }
+.bottom     { margin-bottom:0; padding-bottom:0; }
+
+.center     { margin:auto; padding:auto; clear: both;}
+
+
+/* Some default text color classes
+-------------------------------------------------------------- */
+.grey		{ color: #666;}
+.dkgrey		{ color: darkgrey;}
+.ltgrey		{ color: lightgrey;}
+
+/* Not used in this version of SGT: 2008-09-02
+
+.red		{ color: red;}
+.blue		{ color: #336699;}
+.green		{ color: green;}
+.silver     { color: silver;}
+.white      { color: #fff;}
+-------------------------------------------------------------- */
+
+/*moved to sgt.css
+
+ .apple a, .apple a:hover {
+	text-decoration:none;
+	color:#000;
+}
+-------------------------------------*/
+

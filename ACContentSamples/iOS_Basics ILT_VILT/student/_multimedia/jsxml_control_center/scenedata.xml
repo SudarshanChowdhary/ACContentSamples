@@ -1,0 +1,1473 @@
+<?xml version='1.0' encoding='UTF-8'?>
+   <data version="2.07" w="900" h="640" frame_rate="30" css_style="main_view" page_marker_visible="false" page_marker_fill_color="#6E6E6E" page_marker_stroke_color="#6E6E6E" page_marker_line_width="2" page_marker_size="7">
+       <slide name="slide_intro" frames="0" start_frame="0" audio_sync="none" variables="none" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+              <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="595" y="14" w="250" h="526" a="10" css_style="none" refresh="none">
+               </image>
+               <image file="images/home.png" x="617" y="92" w="208" h="372" a="10" css_style="none" refresh="none">
+               </image>
+             
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p>]]>
+                   </text>
+               </html>
+               <image file="images/gray_line.png" x="164" y="210" w="50" h="3" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/gray_line_vertical.png" x="228" y="404" w="3" h="135" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/gray_line_vertical.png" x="857" y="419" w="3" h="120" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/gray_line_vertical.png" x="540" y="504" w="3" h="45" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/gray_line.png" x="435" y="546" w="220" h="3" a="100" css_style="none" refresh="none">
+               </image>
+               <html x="225" y="40" w="400" h="0" a="100" css_style="text_panel_instructions" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[This interaction presents written and interactive content.]]>
+                   </text>
+               </html>
+               <html x="215" y="178" w="200" h="0" a="100" css_style="how_to_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Relevant knowledge base articles and resources appear in the References sidebar.]]>
+                   </text>
+               </html>
+               <html x="218" y="352" w="200" h="0" a="100" css_style="how_to_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Click here to review earlier content.]]>
+                   </text>
+               </html>
+               <html x="650" y="320" w="200" h="0" a="100" css_style="how_to_panel_right" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Click here to advance to the next part of the interaction. This button becomes clickable after you finish the current part of the interaction. ]]>
+                   </text>
+               </html>
+               <html x="435" y="452" w="200" h="0" a="100" css_style="how_to_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Interactive controls appear here when necessary.]]>
+                   </text>
+               </html>
+ 
+               <button name="none" clicks="1" action="none" right_action="none" x="211" y="548" w="38" h="73" a="30" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="840" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+
+       <slide name="slide_basic_2" frames="120" start_frame="0" audio_sync="none" variables="slide_2_next_x=1840::slide_10_a=0::slide_10_b=0::slide_10_c=0::slide_10_d=0" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="60" action="action_set>action_set_slide_2" loop="false" enabled="true">
+               </timed_event>
+               <action_set name="action_set_slide_2">
+                   <action do="store_variable(slide_2_next_x=840)">
+                   </action>
+                   <action do="refresh>slide_2_next">
+                   </action>
+               </action_set>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+                   
+               </html>
+               
+               <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Control Center gives you quick access to commonly used controls and apps. </br></br>To use Control Center, swipe up from the bottom of the screen. In Settings > Control Center, you can make Control Center inaccessible from the Lock screen or from apps. ]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="595" y="14" w="250" h="526" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/home.png" x="617" y="92" w="208" h="372" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/control_center.png" x="617" y="92" w="208" h="372" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="45" x="617" y="92" w="208" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="48" x="617" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!slide_2_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_2_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/finger.png" x="630" y="650" w="400" h="689" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="630" y="650" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="630" y="440" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="630" y="440" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="40" x="630" y="232" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="50" x="630" y="232" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="60" x="630" y="650" w="400" h="689" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+           </layer>
+       </slide>
+       <slide name="slide_question_3" frames="0" start_frame="0" audio_sync="none" variables="q1_next_x=1840::q1_feedback_correct_x=1240::q1_feedback_incorrect_x=1240::q1_checkmark_x=1246::slide_4_next_x=1840" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <variable name="q1_correct_answer">
+                   <text>
+                       <![CDATA[<notrans>c</notrans>]]>
+                   </text>
+               </variable>
+               <action_set name="action_set_q1_correct">
+                   <action do="store_variable(q1_feedback_correct_x=240)">
+                   </action>
+                   <action do="store_variable(q1_feedback_incorrect_x=1240)">
+                   </action>
+                   <action do="store_variable(q1_checkmark_x=246)">
+                   </action>
+                   <action do="refresh>q1_feedback_correct:q1_feedback_incorrect:q1_checkmark">
+                   </action>
+                   <action do="store_variable(q1_next_x=840)">
+                   </action>
+                   <action do="refresh>q1_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_q1_incorrect">
+                   <action do="store_variable(q1_feedback_incorrect_x=240)">
+                   </action>
+                   <action do="store_variable(q1_feedback_correct_x=1240)">
+                   </action>
+                   <action do="store_variable(q1_checkmark_x=1246)">
+                   </action>
+                   <action do="refresh>q1_feedback_correct:q1_feedback_incorrect:q1_checkmark">
+                   </action>
+               </action_set>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+              <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="300" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[How do you open Control Center?<br><br>
+A. Swipe left from the right side of the screen.<br><br>
+B. Swipe right from the left side of the screen.<br><br>
+C. Swipe up from the bottom of the screen.<br><br>
+D. Swipe down from the top of the screen.]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="595" y="14" w="250" h="526" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/control_center.png" x="617" y="92" w="208" h="372" a="100" css_style="none" refresh="none">
+               </image>
+               <html x="#!q1_feedback_incorrect_x!#" y="400" w="300" h="0" a="100" css_style="feedback_negative" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q1_feedback_incorrect">
+                   <text>
+                       <![CDATA[Incorrect. Try again.]]>
+                   </text>
+               </html>
+               <html x="#!q1_feedback_correct_x!#" y="400" w="276" h="0" a="100" css_style="feedback_positive" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q1_feedback_correct">
+                   <text>
+                       <![CDATA[Good job!]]>
+                   </text>
+               </html>
+               <image file="images/check.png" x="#!q1_checkmark_x!#" y="406" w="28" h="28" a="100" css_style="none" refresh="q1_checkmark">
+               </image>
+               <button name="none" clicks="1" action="if([#!q1_correct_answer!#==a])>action_set>action_set_q1_correct(else)>action_set>action_set_q1_incorrect" right_action="none" x="439" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[A]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q1_correct_answer!#==b])>action_set>action_set_q1_correct(else)>action_set>action_set_q1_incorrect" right_action="none" x="499" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[B]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q1_correct_answer!#==c])>action_set>action_set_q1_correct(else)>action_set>action_set_q1_incorrect" right_action="none" x="559" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[C]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q1_correct_answer!#==d])>action_set>action_set_q1_correct(else)>action_set>action_set_q1_incorrect" right_action="none" x="619" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[D]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!q1_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="q1_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_basic_4" frames="20" start_frame="0" audio_sync="none" variables="none" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="20" action="action_set>action_set_slide_4" loop="false" enabled="true">
+               </timed_event>
+               <action_set name="action_set_slide_4">
+                   <action do="store_variable(slide_4_next_x=840)">
+                   </action>
+                   <action do="refresh>slide_4_next">
+                   </action>
+               </action_set>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="0" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[The icons at the top of Control Center provide quick access to commonly used settings. <br><br>Except for orientation lock, you can access the settings in Control Center from the Settings app. <br><br>When working with customers, you should use the Control Center icons whenever possible because they're faster than using the Settings app.]]>
+                   </text>
+                   <animation>
+                       <keyframe frame="10" x="240" y="133" w="250" h="0" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="240" y="133" w="250" h="0" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </html>
+               <image file="images/touch2.png" x="595" y="14" w="250" h="526" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="595" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="595" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/control_center.png" x="617" y="92" w="208" h="372" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="617" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="518" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="514" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="514" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!slide_4_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_4_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_5" frames="0" start_frame="0" audio_sync="none" variables="slide_5_orange_a=100::slide_5_next_x=1840::airplane_on_x=1518::airplane_off_x=1518::airplane_selected=0::wifi_on_x=1518::wifi_off_x=1518::wifi_selected=0::bluetooth_on_x=1518::bluetooth_off_x=1518::bluetooth_selected=0::dnd_on_x=1518::dnd_off_x=1518::dnd_selected=0::portrait_on_x=1518::portrait_off_x=1518::portrait_selected=0" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <variable name="slide_5_text">
+                   <text>
+                       <![CDATA[Click each of the icons at the top of Control Center to learn what they do.]]>
+                   </text>
+               </variable>
+               <variable name="airplane_text">
+                   <text>
+                       <![CDATA[Airplane Mode: Turn on airplane mode to disable Wi-Fi, Bluetooth, and cellular connectivity.]]>
+                   </text>
+               </variable>
+               <variable name="wifi_text">
+                   <text>
+                       <![CDATA[Wi-Fi: From Control Center, you can use the Wi-Fi icon to turn Wi-Fi on and off.]]>
+                   </text>
+               </variable>
+               <variable name="bluetooth_text">
+                   <text>
+                       <![CDATA[Bluetooth: From Control Center, you can use the Bluetooth icon to turn Bluetooth on and off.]]>
+                   </text>
+               </variable>
+               <variable name="dnd_text">
+                   <text>
+                       <![CDATA[Do Not Disturb: Keep calls, alerts, and notifications from making sounds or waking the display while the screen is locked.]]>
+                   </text>
+               </variable>
+               <variable name="portrait_text">
+                   <text>
+                       <![CDATA[Portrait Orientation Lock: Turn this on to lock your device's screen orientation. <br><br>iPhone screens do not change to landscape orientation while portrait orientation lock is on.<br><br> You can lock the orientation of iPad devices to either landscape or portrait. ]]>
+                   </text>
+               </variable>
+               <action_set name="action_set_q1_correct">
+                   <action do="store_variable(q1_feedback_correct_x=240)">
+                   </action>
+                   <action do="store_variable(q1_feedback_incorrect_x=1240)">
+                   </action>
+                   <action do="refresh>q1_feedback_correct:q1_feedback_incorrect">
+                   </action>
+                   <action do="store_variable(q1_next_x=840)">
+                   </action>
+                   <action do="refresh>q1_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_button_1">
+                   <action do="action_set>reset_wifi">
+                   </action>
+                   <action do="action_set>reset_bluetooth">
+                   </action>
+                   <action do="action_set>reset_dnd">
+                   </action>
+                   <action do="action_set>reset_portrait">
+                   </action>
+                    <action do="action_set>remove_orange">
+                   </action>
+                  <action do="store_variable(slide_5_text=#!airplane_text!#)">
+                   </action>
+                   <action do="store_variable(airplane_selected=1)">
+                   </action>
+                   <action do="if([#!airplane_on_x!#==1518])>store_variable(airplane_on_x=518::airplane_off_x=1518)(else)>store_variable(airplane_on_x=1518::airplane_off_x=518)">
+                   </action>
+                   <action do="if(ALL[#!airplane_selected!#==1][#!wifi_selected!#==1][#!bluetooth_selected!#==1][#!dnd_selected!#==1][#!portrait_selected!#==1])>store_variable(slide_5_next_x=840)">
+                   </action>
+                   <action do="refresh>control_center_airplane_on:control_center_airplane_off:slide_5_text_field:slide_5_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_button_2">
+                   <action do="action_set>reset_airplane">
+                   </action>
+                   <action do="action_set>reset_bluetooth">
+                   </action>
+                   <action do="action_set>reset_dnd">
+                   </action>
+                   <action do="action_set>reset_portrait">
+                   </action>
+                    <action do="action_set>remove_orange">
+                   </action>
+                   <action do="store_variable(slide_5_text=#!wifi_text!#)">
+                   </action>
+                   <action do="store_variable(wifi_selected=1)">
+                   </action>
+                   <action do="if([#!wifi_on_x!#==1518])>store_variable(wifi_on_x=518::wifi_off_x=1518)(else)>store_variable(wifi_on_x=1518::wifi_off_x=518)">
+                   </action>
+                   <action do="if(ALL[#!airplane_selected!#==1][#!wifi_selected!#==1][#!bluetooth_selected!#==1][#!dnd_selected!#==1][#!portrait_selected!#==1])>store_variable(slide_5_next_x=840)">
+                   </action>
+                   <action do="refresh>control_center_wifi_on:control_center_wifi_off:slide_5_text_field:slide_5_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_button_3">
+                   <action do="action_set>reset_airplane">
+                   </action>
+                   <action do="action_set>reset_wifi">
+                   </action>
+                   <action do="action_set>reset_dnd">
+                   </action>
+                   <action do="action_set>reset_portrait">
+                   </action>
+                    <action do="action_set>remove_orange">
+                   </action>
+                   <action do="store_variable(slide_5_text=#!bluetooth_text!#)">
+                   </action>
+                   <action do="store_variable(bluetooth_selected=1)">
+                   </action>
+                   <action do="if([#!bluetooth_on_x!#==1518])>store_variable(bluetooth_on_x=518::bluetooth_off_x=1518)(else)>store_variable(bluetooth_on_x=1518::bluetooth_off_x=518)">
+                   </action>
+                   <action do="if(ALL[#!airplane_selected!#==1][#!wifi_selected!#==1][#!bluetooth_selected!#==1][#!dnd_selected!#==1][#!portrait_selected!#==1])>store_variable(slide_5_next_x=840)">
+                   </action>
+                   <action do="refresh>control_center_bluetooth_on:control_center_bluetooth_off:slide_5_text_field:slide_5_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_button_4">
+                   <action do="action_set>reset_airplane">
+                   </action>
+                   <action do="action_set>reset_wifi">
+                   </action>
+                   <action do="action_set>reset_bluetooth">
+                   </action>
+                   <action do="action_set>reset_portrait">
+                   </action>
+                    <action do="action_set>remove_orange">
+                   </action>
+                   <action do="store_variable(slide_5_text=#!dnd_text!#)">
+                   </action>
+                   <action do="store_variable(dnd_selected=1)">
+                   </action>
+                   <action do="if([#!dnd_on_x!#==1518])>store_variable(dnd_on_x=518::dnd_off_x=1518)(else)>store_variable(dnd_on_x=1518::dnd_off_x=518)">
+                   </action>
+                   <action do="if(ALL[#!airplane_selected!#==1][#!wifi_selected!#==1][#!bluetooth_selected!#==1][#!dnd_selected!#==1][#!portrait_selected!#==1])>store_variable(slide_5_next_x=840)">
+                   </action>
+                   <action do="refresh>control_center_dnd_on:control_center_dnd_off:slide_5_text_field:slide_5_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_button_5">
+                   <action do="action_set>reset_airplane">
+                   </action>
+                   <action do="action_set>reset_wifi">
+                   </action>
+                   <action do="action_set>reset_bluetooth">
+                   </action>
+                   <action do="action_set>reset_dnd">
+                   </action>
+                    <action do="action_set>remove_orange">
+                   </action>
+                   <action do="store_variable(slide_5_text=#!portrait_text!#)">
+                   </action>
+                   <action do="store_variable(portrait_selected=1)">
+                   </action>
+                   <action do="if([#!portrait_on_x!#==1518])>store_variable(portrait_on_x=518::portrait_off_x=1518)(else)>store_variable(portrait_on_x=1518::portrait_off_x=518)">
+                   </action>
+                   <action do="if(ALL[#!airplane_selected!#==1][#!wifi_selected!#==1][#!bluetooth_selected!#==1][#!dnd_selected!#==1][#!portrait_selected!#==1])>store_variable(slide_5_next_x=840)">
+                   </action>
+                   <action do="refresh>control_center_portrait_on:control_center_portrait_off:slide_5_text_field:slide_5_next">
+                   </action>
+               </action_set>
+               <action_set name="reset_airplane">
+                   <action do="store_variable(airplane_on_x=1518::airplane_off_x=1518)">
+                   </action>
+                   <action do="refresh>control_center_airplane_on:control_center_airplane_off">
+                   </action>
+               </action_set>
+               <action_set name="reset_wifi">
+                   <action do="store_variable(wifi_on_x=1518::wifi_off_x=1518)">
+                   </action>
+                   <action do="refresh>control_center_wifi_on:control_center_wifi_off">
+                   </action>
+               </action_set>
+               <action_set name="reset_bluetooth">
+                   <action do="store_variable(bluetooth_on_x=1518::bluetooth_off_x=1518)">
+                   </action>
+                   <action do="refresh>control_center_bluetooth_on:control_center_bluetooth_off">
+                   </action>
+               </action_set>
+               <action_set name="reset_dnd">
+                   <action do="store_variable(dnd_on_x=1518::dnd_off_x=1518)">
+                   </action>
+                   <action do="refresh>control_center_dnd_on:control_center_dnd_off">
+                   </action>
+               </action_set>
+               <action_set name="reset_portrait">
+                   <action do="store_variable(portrait_on_x=1518::portrait_off_x=1518)">
+                   </action>
+                   <action do="refresh>control_center_portrait_on:control_center_portrait_off">
+                   </action>
+               </action_set>
+               <action_set name="remove_orange">
+                   <action do="store_variable(slide_5_orange_a=0)">
+                   </action>
+                   <action do="refresh>slide_5_orange_line:slide_5_orange_vert:slide_5_orange_box">
+                   </action>
+               </action_set>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="slide_5_text_field">
+                   <text>
+                       <![CDATA[<notrans>#!slide_5_text!#</notrans>]]>
+                   </text>
+               </html>
+               <image file="images/control_center.png" x="518" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+               </image>
+               <image file="images/airplane_on.png" x="#!airplane_on_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_airplane_on">
+               </image>
+               <image file="images/airplane_off.png" x="#!airplane_off_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_airplane_off">
+               </image>
+               <image file="images/wifi_on.png" x="#!wifi_on_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_wifi_on">
+               </image>
+               <image file="images/wifi_off.png" x="#!wifi_off_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_wifi_off">
+               </image>
+               <image file="images/bluetooth_on.png" x="#!bluetooth_on_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_bluetooth_on">
+               </image>
+               <image file="images/bluetooth_off.png" x="#!bluetooth_off_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_bluetooth_off">
+               </image>
+               <image file="images/dnd_on.png" x="#!dnd_on_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_dnd_on">
+               </image>
+               <image file="images/dnd_off.png" x="#!dnd_off_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_dnd_off">
+               </image>
+               <image file="images/portrait_on.png" x="#!portrait_on_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_portrait_on">
+               </image>
+               <image file="images/portrait_off.png" x="#!portrait_off_x!#" y="-80" w="340" h="604" a="100" css_style="none" refresh="control_center_portrait_off">
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+               </image>
+
+
+               <image file="images/orange_line.png" x="489" y="130" w="34" h="3" a="#!slide_5_orange_a!#" css_style="none" refresh="slide_5_orange_line">
+               </image>
+               <image file="images/orange_line_vertical.png" x="488" y="130" w="3" h="30" a="#!slide_5_orange_a!#" css_style="none" refresh="slide_5_orange_vert">
+               </image>
+               <html x="519" y="85" w="330" h="75" a="#!slide_5_orange_a!#" css_style="callout_box" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="slide_5_orange_box">
+                   <text>
+                       <![CDATA[ ]]>
+                   </text>
+               </html>
+
+               <button name="none" clicks="1" action="action_set>action_set_button_1" right_action="none" x="532" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="action_set>action_set_button_2" right_action="none" x="596" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="action_set>action_set_button_3" right_action="none" x="660" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="action_set>action_set_button_4" right_action="none" x="724" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="action_set>action_set_button_5" right_action="none" x="788" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!slide_5_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_5_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_basic_6" frames="0" start_frame="0" audio_sync="none" variables="none" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+                <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Control Center includes a brightness slider and music playback controls.]]>
+                   </text>
+               </html>
+               <image file="images/control_center.png" x="518" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/orange_line.png" x="489" y="190" w="54" h="3" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/orange_line.png" x="489" y="320" w="54" h="3" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/orange_line_vertical.png" x="488" y="160" w="3" h="160" a="100" css_style="none" refresh="none">
+               </image>
+
+              <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="840" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_question_7" frames="0" start_frame="0" audio_sync="none" variables="q7_next_x=1840::q7_feedback_correct_x=1240::q7_feedback_incorrect_x=1240::q7_checkmark_x=1246" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <variable name="q7_correct_answer">
+                   <text>
+                       <![CDATA[<notrans>a</notrans>]]>
+                   </text>
+               </variable>
+               <action_set name="action_set_q7_correct">
+                   <action do="store_variable(q7_feedback_correct_x=240)">
+                   </action>
+                   <action do="store_variable(q7_feedback_incorrect_x=1240)">
+                   </action>
+                   <action do="store_variable(q7_checkmark_x=246)">
+                   </action>
+                   <action do="refresh>q7_feedback_correct:q7_feedback_incorrect:q7_checkmark">
+                   </action>
+                   <action do="store_variable(q7_next_x=840)">
+                   </action>
+                   <action do="refresh>q7_next">
+                   </action>
+               </action_set>
+               <action_set name="action_set_q7_incorrect">
+                   <action do="store_variable(q7_feedback_incorrect_x=240)">
+                   </action>
+                   <action do="store_variable(q7_feedback_correct_x=1240)">
+                   </action>
+                   <action do="store_variable(q7_checkmark_x=1246)">
+                   </action>
+                   <action do="refresh>q7_feedback_correct:q7_feedback_incorrect:q7_checkmark">
+                   </action>
+               </action_set>
+           </layer>
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Which Control Center setting disables Wi-Fi, Bluetooth, and cellular connectivity when you turn it on?<br><br>
+A. Airplane mode<br><br>
+B. Bluetooth<br><br>
+C. Do not disturb<br><br>
+D. Portrait orientation lock]]>
+                   </text>
+               </html>
+               <image file="images/control_center.png" x="518" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+               </image>
+               <html x="#!q7_feedback_incorrect_x!#" y="400" w="230" h="0" a="100" css_style="feedback_negative" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q7_feedback_incorrect">
+                   <text>
+                       <![CDATA[Incorrect. Try again.]]>
+                   </text>
+               </html>
+               <html x="#!q7_feedback_correct_x!#" y="400" w="210" h="0" a="100" css_style="feedback_positive" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q7_feedback_correct">
+                   <text>
+                       <![CDATA[Good job!]]>
+                   </text>
+               </html>
+               <image file="images/check.png" x="#!q7_checkmark_x!#" y="406" w="28" h="28" a="100" css_style="none" refresh="q7_checkmark">
+               </image>
+               <button name="none" clicks="1" action="if([#!q7_correct_answer!#==a])>action_set>action_set_q7_correct(else)>action_set>action_set_q7_incorrect" right_action="none" x="439" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[A]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q7_correct_answer!#==b])>action_set>action_set_q7_correct(else)>action_set>action_set_q7_incorrect" right_action="none" x="499" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[B]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q7_correct_answer!#==c])>action_set>action_set_q7_correct(else)>action_set>action_set_q7_incorrect" right_action="none" x="559" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[C]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="if([#!q7_correct_answer!#==d])>action_set>action_set_q7_correct(else)>action_set>action_set_q7_incorrect" right_action="none" x="619" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                   <text>
+                       <![CDATA[D]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!q7_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="q7_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_8" frames="0" start_frame="0" audio_sync="none" variables="slide_8_orange_a=100::airdrop_a=0::slide_8_next_x=1840::slide_8_button1_x=522::airdrop_text_1_a=100::airdrop_text_2_a=0" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <action_set name="action_set_airdrop_on">
+                   <action do="store_variable(airdrop_a=100)">
+                   </action>
+                   <action do="store_variable(slide_8_button1_x=1522)">
+                   </action>
+                   <action do="store_variable(airdrop_text_1_a=0)">
+                   </action>
+                   <action do="store_variable(airdrop_text_2_a=100)">
+                   </action>
+                   <action do="store_variable(slide_8_orange_a=0)">
+                   </action>
+                   <action do="store_variable(slide_8_next_x=840)">
+                   </action>
+                   <action do="refresh>airdrop_screen:slide_8_button1:slide_8_orange_line:slide_8_orange_vert:airdrop_text_1:airdrop_text_2:slide_8_next">
+                   </action>
+               </action_set>
+
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT5858" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="#!airdrop_text_1_a!#" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="airdrop_text_1">
+                   <text>
+                       <![CDATA[You manage your AirDrop availability from Control Center. </br></br>Click the AirDrop icon.]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="#!airdrop_text_2_a!#" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="airdrop_text_2">
+                   <text>
+                       <![CDATA[AirDrop requires an iCloud account. AirDrop works via Bluetooth and Wi-Fi between iOS devices and computers.<br><br> AirDrop works on most recent iOS devices.
+                        </br></br>Click the next button to continue.]]>
+                   </text>
+               </html>
+               <image file="images/control_center.png" x="518" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+               </image>
+               <image file="images/airdrop_on.png" x="518" y="-80" w="340" h="604" a="#!airdrop_a!#" css_style="none" refresh="airdrop_screen">
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+               </image>
+
+               <image file="images/orange_line.png" x="489" y="394" w="54" h="3" a="#!slide_8_orange_a!#" css_style="none" refresh="slide_8_orange_line">
+               </image>
+               <image file="images/orange_line_vertical.png" x="488" y="133" w="3" h="262" a="#!slide_8_orange_a!#" css_style="none" refresh="slide_8_orange_vert">
+               </image>
+               
+               <button name="none" clicks="1" action="action_set>action_set_airdrop_on" right_action="none" x="#!slide_8_button1_x!#" y="369" w="162" h="56" a="100" css_style="button_hidden" refresh="slide_8_button1" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!slide_8_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_8_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_basic_9" frames="30" start_frame="0" audio_sync="none" variables="slide_9_next_x=1840" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="30" action="action_set>action_set_slide_9" loop="false" enabled="true">
+               </timed_event>
+               <action_set name="action_set_slide_9">
+                   <action do="store_variable(slide_9_next_x=840)">
+                   </action>
+                   <action do="refresh>slide_9_next">
+                   </action>
+               </action_set>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="0" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Use the AirPlay icon to connect to AirPlay-enabled devices on your network. The AirPlay icon appears only if your Wi-Fi network includes an AirPlay-enabled device.]]>
+                   </text>
+                   <animation>
+                       <keyframe frame="25" x="580" y="133" w="250" h="0" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="580" y="133" w="250" h="0" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </html>
+               <image file="images/control_center.png" x="518" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="518" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="514" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="514" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+
+               <image file="images/orange_line.png" x="528" y="395" w="44" h="3" a="0" css_style="none" refresh="none">
+                    <animation>
+                       <keyframe frame="25" x="528" y="395" w="44" h="3" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="528" y="395" w="44" h="3" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+              </image>
+               <image file="images/orange_line_vertical.png" x="570" y="133" w="3" h="263" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="25" x="570" y="133" w="3" h="263" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="570" y="133" w="3" h="263" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+
+
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="next_slide" right_action="none" x="#!slide_9_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_9_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_10" frames="0" start_frame="0" audio_sync="none" variables="slide_10_next_x=1840" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <action_set name="action_set_slide_10">
+                   <action do="if(ALL[#!slide_10_a!#==1][#!slide_10_b!#==1][#!slide_10_c!#==1][#!slide_10_d!#==1])>store_variable(slide_10_next_x=840)">
+                   </action>
+                   <action do="refresh>slide_10_next">
+                   </action>
+               </action_set>
+               <timed_event frame="0" action="action_set>action_set_slide_10" loop="false" enabled="true">
+               </timed_event>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[The icons at the bottom of Control Center have several functions: illuminate your device's LED flash for use as a flashlight, and open Clock, Calculator, and Camera. <br><br>Click the icons at the bottom of Control Center to learn what they do.]]>
+                   </text>
+               </html>
+               <image file="images/control_center.png" x="218" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+               </image>
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+               </image>
+
+               <image file="images/orange_line.png" x="547" y="473" w="25" h="3" a="100" css_style="none" refresh="none">
+               </image>
+               <image file="images/orange_line_vertical.png" x="570" y="133" w="3" h="341" a="100" css_style="none" refresh="none">
+               </image>
+
+
+               <button name="none" clicks="1" action="jump>slide_hotspots_10_a" right_action="none" x="232" y="439" w="70" h="70" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="jump>slide_hotspots_10_b" right_action="none" x="314" y="439" w="70" h="70" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="jump>slide_hotspots_10_c" right_action="none" x="394" y="439" w="70" h="70" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="jump>slide_hotspots_10_d" right_action="none" x="474" y="439" w="70" h="70" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+               <button name="none" clicks="1" action="jump>slide_question_11" right_action="none" x="#!slide_10_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="slide_10_next" image="images/next_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_10_a" frames="150" start_frame="0" audio_sync="none" variables="slide_10_a=1" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="150" action="jump>slide_hotspots_10" loop="false" enabled="true">
+               </timed_event>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[Flashlight activates the device's LED flash as a flashlight. This icon appears only on devices that have an LED flash. ]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/control_center.png" x="218" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/touch2_back.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="20" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="120" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="130" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/flashlight_flash.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="30" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="40" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="110" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="120" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+
+               <button name="none" clicks="1" action="none" right_action="none" x="522" y="369" w="162" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="596" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="211" y="548" w="38" h="73" a="30" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_10_b" frames="100" start_frame="0" audio_sync="none" variables="slide_10_b=1" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="100" action="jump>slide_hotspots_10" loop="false" enabled="true">
+               </timed_event>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[The clock icon opens the Clock app.]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/control_center.png" x="218" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/clock.png" x="237" y="92" w="210" h="372" a="0" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="237" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="237" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="none" right_action="none" x="522" y="369" w="162" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="596" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="211" y="548" w="38" h="73" a="30" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_10_c" frames="150" start_frame="0" audio_sync="none" variables="slide_10_c=1" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="150" action="jump>slide_hotspots_10" loop="false" enabled="true">
+               </timed_event>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[The calculator icon opens the Calculator app, but only on devices that have Calculator. iOS devices that don't include Calculator don't have a Calculator icon in Control Center.]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/control_center.png" x="218" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/calculator.png" x="238" y="92" w="210" h="372" a="0" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="238" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="238" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="238" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="238" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="140" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="150" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="none" right_action="none" x="522" y="369" w="162" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="596" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="211" y="548" w="38" h="73" a="30" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+           </layer>
+       </slide>
+       <slide name="slide_hotspots_10_d" frames="100" start_frame="0" audio_sync="none" variables="slide_10_d=1" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+               <timed_event frame="100" action="jump>slide_hotspots_10" loop="false" enabled="true">
+               </timed_event>
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="580" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[The camera icon opens the Camera app. You can also access Camera from the Lock screen. ]]>
+                   </text>
+               </html>
+               <image file="images/touch2.png" x="216" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="216" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="216" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/control_center.png" x="218" y="-80" w="340" h="604" a="100" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="238" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="218" y="-80" w="340" h="604" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/camera_app.png" x="237" y="92" w="210" h="372" a="0" css_style="image_shadow" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="237" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="237" y="92" w="210" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="237" y="92" w="210" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="0" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="10" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="90" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="100" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="none" right_action="none" x="522" y="369" w="162" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="596" y="99" w="56" h="56" a="100" css_style="button_hidden" refresh="none" image="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="none" right_action="none" x="211" y="548" w="38" h="73" a="30" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+               </image>
+           </layer>
+       </slide>
+       <slide name="slide_question_11" frames="0" start_frame="0" audio_sync="none" variables="q11_next_x=1840::q11_feedback_correct_x=1240::q11_feedback_incorrect_x=1240::q11_checkmark_x=1246" visible="true" parallax="false">
+          <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+              <variable name="q11_correct_answer">
+                  <text>
+                      <![CDATA[<notrans>a</notrans>]]>
+                  </text>
+              </variable>
+              <action_set name="action_set_q11_correct">
+                  <action do="store_variable(q11_feedback_correct_x=240)">
+                  </action>
+                  <action do="store_variable(q11_feedback_incorrect_x=1240)">
+                  </action>
+                  <action do="store_variable(q11_checkmark_x=246)">
+                  </action>
+                  <action do="refresh>q11_feedback_correct:q11_feedback_incorrect:q11_checkmark">
+                  </action>
+                  <action do="store_variable(q11_next_x=840)">
+                  </action>
+                  <action do="refresh>q11_next">
+                  </action>
+              </action_set>
+              <action_set name="action_set_q11_incorrect">
+                  <action do="store_variable(q11_feedback_incorrect_x=240)">
+                  </action>
+                  <action do="store_variable(q11_feedback_correct_x=1240)">
+                  </action>
+                  <action do="store_variable(q11_checkmark_x=1246)">
+                  </action>
+                  <action do="refresh>q11_feedback_correct:q11_feedback_incorrect:q11_checkmark">
+                  </action>
+              </action_set>
+              
+          </layer>
+          
+          <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+              <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                  <text>
+                      <![CDATA[]]>
+                  </text>
+              </html>
+              <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                  <text>
+                      <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                  </text>
+              </html>
+            
+              <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                  <text>
+                      <![CDATA[Elizabeth says that there is no Calculator icon in Control Center on her iPad. What should you tell her?<br><br>
+A. "Because iPad doesn't have Calculator, there isn't supposed to be a calculator icon in Control Center."<br><br>
+B. "You need to install a third-party calculator app on your iPad."<br><br>
+C. "Ensure that Calculator is enabled in Settings > Control Center."<br><br>
+D. "Restore your iPad to replace the missing icon." ]]>
+                  </text>
+                     
+              </html>
+              <image file="images/ipad_control_center.png" x="518" y="25" w="334" h="462" a="100" css_style="image_shadow" refresh="none">
+              </image>
+             
+              <html x="#!q11_feedback_incorrect_x!#" y="400" w="230" h="0" a="100" css_style="feedback_negative" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q11_feedback_incorrect">
+                  <text>
+                      <![CDATA[Incorrect. Try again.]]>
+                  </text>
+              </html>
+              <html x="#!q11_feedback_correct_x!#" y="400" w="210" h="0" a="100" css_style="feedback_positive" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="q11_feedback_correct">
+                  <text>
+                      <![CDATA[Good job!]]>
+                  </text>
+              </html>
+              <image file="images/check.png" x="#!q11_checkmark_x!#" y="406" w="28" h="28" a="100" css_style="none" refresh="q11_checkmark">
+              </image>
+              <button name="none" clicks="1" action="if([#!q11_correct_answer!#==a])>action_set>action_set_q11_correct(else)>action_set>action_set_q11_incorrect" right_action="none" x="439" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                  <text>
+                      <![CDATA[A]]>
+                  </text>
+              </button>
+              <button name="none" clicks="1" action="if([#!q11_correct_answer!#==b])>action_set>action_set_q11_correct(else)>action_set>action_set_q11_incorrect" right_action="none" x="499" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                  <text>
+                      <![CDATA[B]]>
+                  </text>
+              </button>
+              <button name="none" clicks="1" action="if([#!q11_correct_answer!#==c])>action_set>action_set_q11_correct(else)>action_set>action_set_q11_incorrect" right_action="none" x="559" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                  <text>
+                      <![CDATA[C]]>
+                  </text>
+              </button>
+              <button name="none" clicks="1" action="if([#!q11_correct_answer!#==d])>action_set>action_set_q11_correct(else)>action_set>action_set_q11_incorrect" right_action="none" x="619" y="560" w="20" h="0" a="100" css_style="button_active" refresh="none" image="none">
+                  <text>
+                      <![CDATA[D]]>
+                  </text>
+              </button>
+              <button name="none" clicks="1" action="jump>slide_hotspots_10" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                  <text>
+                      <![CDATA[]]>
+                  </text>
+              </button>
+              <image file="images/next_ios7.png" x="840" y="548" w="38" h="73" a="30" css_style="none" refresh="none">
+              </image>
+              <button name="none" clicks="1" action="next_slide" right_action="none" x="#!q11_next_x!#" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="q11_next" image="images/next_ios7.png">
+                  <text>
+                      <![CDATA[]]>
+                  </text>
+              </button>
+          </layer>
+      </slide>
+       <slide name="final_slide" frames="30" start_frame="0" audio_sync="none" variables="none" visible="true" parallax="false">
+           <layer x="0" y="0" w="default" h="default" a="100" css_style="none" scrollable="false" scroll_w="0" scroll_h="0" transition_in="none" transition_out="none">
+
+<timed_event frame="0" action="mark_complete" loop="false"/>
+
+               <html x="10" y="10" w="880" h="620" a="100" css_style="bg_gradient" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </html>
+               <html x="19" y="18" w="170" h="580" a="100" css_style="overlay_sidebar" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[<p>References</p><p class="kblinks"><a href="iLog://articleId=HT202769" target="_blank">"Use Control Center on your iPhone, iPad, and iPod touch" </a></p><p class="kblinks"><a href="iLog://articleId=HT204289" target="_blank">"Use AirPlay to wirelessly stream content from your iPhone, iPad, or iPod touch" </a></p>]]>
+                   </text>
+               </html>
+               <html x="240" y="133" w="250" h="0" a="100" css_style="text_panel_left" shape="none" line_width="2" color="#000000" fill_color="transparent" refresh="none">
+                   <text>
+                       <![CDATA[You completed this interaction.]]>
+                   </text>
+               </html>
+               
+               <image file="images/zoom_top.png" x="214" y="0" w="348" h="62" a="100" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="10" x="214" y="0" w="348" h="62" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="20" x="214" y="0" w="348" h="62" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/touch2.png" x="595" y="14" w="250" h="526" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="20" x="595" y="14" w="250" h="526" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="595" y="14" w="250" h="526" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <image file="images/home.png" x="617" y="92" w="208" h="372" a="0" css_style="none" refresh="none">
+                   <animation>
+                       <keyframe frame="20" x="617" y="92" w="208" h="372" a="0" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                       <keyframe frame="30" x="617" y="92" w="208" h="372" a="100" ease_x="linear" ease_y="linear" ease_w="linear" ease_h="linear" ease_a="linear">
+                       </keyframe>
+                   </animation>
+               </image>
+               <button name="none" clicks="1" action="previous_slide" right_action="none" x="211" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/prev_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+               <button name="none" clicks="1" action="jump>slide_basic_2" right_action="none" x="840" y="548" w="38" h="73" a="100" css_style="button_hidden" refresh="none" image="images/replay_ios7.png">
+                   <text>
+                       <![CDATA[]]>
+                   </text>
+               </button>
+           </layer>
+       </slide>
+   </data>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<meta_tags>
+	    <owner><![CDATA[JustinDavis]]></owner>
+	    <module_name><![CDATA[<notrans>iLog 10 User Interface</notrans>]]></module_name>
+	    <module_name_loc><![CDATA[iLog 10 User Interface]]></module_name_loc>
+	    <module_desc><![CDATA[This module gives Advisors a tour of Dashboard and Article Viewer in iLog 10. This module also gives Advisors opportunities to practice navigating these iLog 10 features.]]></module_desc>
+		<series><![CDATA[<notrans>none</notrans>]]></series>
+		<language><![CDATA[en]]></language>
+		<template_version><![CDATA[<notrans>01.05.2015</notrans>]]></template_version>
+		<archive><![CDATA[<notrans>no</notrans>]]></archive>
+	</meta_tags>
+</module>

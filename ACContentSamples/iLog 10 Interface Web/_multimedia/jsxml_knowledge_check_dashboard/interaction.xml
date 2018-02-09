@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data w="1000" h="780" frame_rate="" background_color="" css_style="">
+    <slide name="slide_init">
+        <layer name="layer_variables" css_style="">
+            <variable name="make_required" value="true"></variable>
+            
+            <!-- set min_height to allocate height for question_text on slide -->
+            <variable name="question_min_height" value="90"></variable>
+            
+            <array name="button_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[My Links]]></value>
+                <!-- 2 -->
+                <value><![CDATA[Needs Attention]]></value>
+                <!-- 3 -->
+                <value><![CDATA[My Commitments]]></value>
+                <!-- 4 -->
+                <value><![CDATA[Recently Published]]></value>
+                <!-- 5 -->
+                <value><![CDATA[AppleLearn]]></value>
+                <!-- 6 -->
+                <value><![CDATA[Emerging Issues]]></value>
+                <!-- 7 -->
+                <value><![CDATA[My Handled Cases]]></value>
+            </array>
+            
+            <array name="incorrect_feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[You use the My Links section to save your frequently used links.]]></value>
+                <!-- 2 -->
+                <value><![CDATA[The Needs Attention section lists Bullet*News articles.  ]]></value>
+                <!-- 3 -->
+                <value><![CDATA[The My Commitments section lists your callbacks and follow-ups.]]></value>
+                <!-- 4 -->
+                <value><![CDATA[The Recently Published section lists SOPs, non-urgent Bullet*News, and ISCS content.]]></value>
+                <!-- 5 -->
+                <value><![CDATA[The AppleLearn section lists new, pending, and overdue training.]]></value>
+                <!-- 6 -->
+                <value><![CDATA[The Emerging Issues section lists articles related to issues Engineering is tracking.]]></value>
+                <!-- 7 -->
+                <value><![CDATA[The My Handled Cases section lists cases you handled within the last 24 hours.]]></value>
+            </array>
+            
+            <array name="correct_feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[Correct! You use the My Links section to save your frequently used links. Remember, you can add and remove links and organize links using folders.]]></value>
+                <!-- 2 -->
+                <value><![CDATA[Correct! The Needs Attention section lists Bullet*News articles. Remember, you must read and acknowledge all articles before you can close Dashboard.]]></value>
+                <!-- 3 -->
+                <value><![CDATA[Correct! The My Commitments section lists your callbacks and follow-ups. Remember, alert badges indicate that commitments are overdue. You should address overdue commitments as soon as possible.]]></value>
+                <!-- 4 -->
+                <value><![CDATA[Correct! The Recently Published section lists SOPs, non-urgent Bullet*News, and ISCS content. Remember, you can remove content you've already reviewed.]]></value>
+                <!-- 5 -->
+                <value><![CDATA[Correct! The AppleLearn section lists new, pending, and overdue training. Remember, you can access your training using the My Learning menu in the Advisor's Corner.]]></value>
+                <!-- 6 -->
+                <value><![CDATA[Correct! The Emerging Issues section lists articles related to issues Engineering is tracking. Remember, you can keep articles open in Article Viewer throughout your day for quick reference.]]></value>
+                <!-- 7 -->
+                <value><![CDATA[Correct! The My Handled Cases section lists cases you handled within the last 24 hours. Remember, you can click the star to add up to 200 cases to the My Handled Cases section.]]></value>
+            </array>
+            
+            <variable name="final_feedback_txt">
+                <![CDATA[Congratulations! You've completed this interaction.]]>
+            </variable>
+            
+            <variable name="restart_btn_txt">
+                <![CDATA[Start over]]>
+            </variable>
+            
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <value><![CDATA[<notrans></notrans>]]></value>
+            </array>
+            
+            <variable name="image_width" value="1000"></variable>
+            <variable name="image_height" value="562"></variable>
+
+            <array name="slide_image_1" values="0::0::1000::auto"></array>
+            <array name="slide_visited" values="none::true::false::false::false::false::false::false::false::false"></array>
+            <variable name="slide_animation" value="false"></variable>
+            <array name="button_css" values="none::false::false::false::false::false::false::false"></array>
+            
+            <variable name="user_answer" value="0"></variable>
+            <variable name="correct_answer" value="0" />
+            
+            <variable name="current_item_id" value="1"></variable>
+            <variable name="current_item" value="item_1"></variable>
+            <variable name="current_fade" value="fade_1"></variable>
+            <variable name="current_feedback" value="feedback_1"></variable>
+            
+            <action_set name="interaction_mark_complete" global="true">
+                <action do="if(#!make_required!#==true, mark_complete)" />
+                <action do="make_required=false" />
+            </action_set>
+            
+            <action_set name="mouse_enter" global="true">
+                <action do="button_#!current_item_id!#.addCssStyle(on_hover)" />
+                <action do="item_#!current_item_id!#.addCssStyle(on_hover)" />
+                <action do="if(#!current_item_id!#==#!user_answer!#, feedback_#!current_item_id!#.addCssStyle(show))" />            
+            </action_set>
+            <action_set name="mouse_leave" global="true">
+                <action do="current_item=item_#!current_item_id!#" />
+                <action do="current_fade=fade_#!current_item_id!#" />
+                <action do="button_#!current_item_id!#.removeCssStyle(on_hover)" />
+                <action do="item_#!current_item_id!#.removeCssStyle(on_hover)" />
+                <action do="feedback_#!current_item_id!#.removeCssStyle(show)" />    
+            </action_set> 
+            
+            <action_set name="init_slide" global="true">
+                <action do="feedback_txt[1]=#!incorrect_feedback_txt[1]!#:feedback_txt[2]=#!incorrect_feedback_txt[2]!#:feedback_txt[3]=#!incorrect_feedback_txt[3]!#:feedback_txt[4]=#!incorrect_feedback_txt[4]!#:feedback_txt[5]=#!incorrect_feedback_txt[5]!#:feedback_txt[6]=#!incorrect_feedback_txt[6]!#:feedback_txt[7]=#!incorrect_feedback_txt[7]!#" />
+                <action do="feedback_txt[#!correct_answer!#]=#!correct_feedback_txt[correct_answer]!#" />
+                <action do="feedback_1.reset():feedback_2.reset():feedback_3.reset():feedback_4.reset():feedback_5.reset():feedback_6.reset():feedback_7.reset()" />                
+                <action do="clear_exercise" />
+                <action do="set_navigation" />
+                <action do="user_answer=0" />
+                <action do="if(#!question_txt.h!#(lt)#!question_min_height!#, question_txt.setHeight(#!question_min_height!#))" />
+                <action do="layer_item.setY(#!layer_image.y!#):layer_feedback.setY(#!layer_image.y!#)::layer_navigation.setY(#!layer_image.y!#+#!layer_image.h!#)" />
+                <action do="layer_image.setOpacity(100)" />
+                
+                <action do="slide_visited[#!current_slide!#]=true" />
+                <action do="if(#!slide_image_1[0]!#!=#!image_1_vars[0]!# OR #!slide_image_1[1]!#!=#!image_1_vars[1]!# OR #!slide_image_1[2]!#!=#!image_1_vars[2]!# OR #!slide_image_1[3]!#!=#!image_1_vars[3]!#, slide_animation=true:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, init_slide_animation:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, wait(30))" />
+                <action do="if(#!slide_animation!#==true, layer_item.setOpacity(100, 10, linear), layer_item.setOpacity(100))" />
+                <action do="layer_feedback.setOpacity(100, 60, linear)" />
+                <action do="check_completion"/>
+            </action_set>
+            
+            <action_set name="set_navigation" global="true">
+                <action do="prev_btn.hide():next_btn.hide():restart_btn.hide()" />
+                <action do="if(#!current_slide!#(gt)2, prev_btn.show())" />
+                <action do="layer_navigation.setOpacity(100)" />
+            </action_set>
+            
+            <action_set name="check_completion" global="true">
+                <!--
+                <action do="if(#!slide_visited[2]!#==true AND #!slide_visited[3]!#==true AND #!slide_visited[4]!#==true AND #!slide_visited[5]!#==true AND #!slide_visited[6]!#==true, interaction_mark_complete:if-hack=true)"/>
+                -->
+            </action_set>
+            
+            <action_set name="clear_exercise" global="true">
+                <action do="next_btn.hide():restart_btn.hide()" />
+                <action do="button_css[1]=false:button_css[2]=false:button_css[3]=false:button_css[4]=false:button_css[5]=false:button_css[6]=false:button_css[7]=false" />
+                <action do="button_1.reset():button_2.reset():button_3.reset():button_4.reset():button_5.reset():button_6.reset():button_7.reset()" />
+            </action_set>
+            
+            <action_set name="check_exercise" global="true">
+                <action do="feedback_#!current_item_id!#.removeCssStyle(correct):feedback_#!current_item_id!#.removeCssStyle(incorrect)" />
+                <action do="if(#!user_answer!#==#!correct_answer!#, button_css[#!user_answer!#]=correct, button_css[#!user_answer!#]=incorrect)" />
+                <action do="if(#!user_answer!#==#!correct_answer!#, feedback_#!current_item_id!#.addCssStyle(correct), feedback_#!current_item_id!#.addCssStyle(incorrect))" />
+                <action do="if(#!user_answer!#==#!correct_answer!# AND #!current_slide!#(lt)#!number_of_slides!#, next_btn.show())" />
+                <action do="if(#!user_answer!#==#!correct_answer!# AND #!current_slide!#==#!number_of_slides!#,  interaction_mark_complete:final_feedback.setOpacity(100):restart_btn.show())" />
+                
+                <action do="feedback_#!current_item_id!#.addCssStyle(show)" />
+                <action do="button_#!user_answer!#.reset()" />
+            </action_set>
+            
+            <action_set name="init_slide_animation" global="true">
+                <action do="bg_image.setOpacity(100)" />
+                
+                <action do="slide_image_1[0]=#!image_1_vars[0]!#:slide_image_1[1]=#!image_1_vars[1]!#:slide_image_1[2]=#!image_1_vars[2]!#:slide_image_1[3]=#!image_1_vars[3]!#" />
+                <action do="bg_image.setPosition(#!slide_image_1[0]!#, #!slide_image_1[1]!#, 15, swing):bg_image.setSize(#!slide_image_1[2]!#, #!slide_image_1[3]!#, 15, swing)" />
+            </action_set>
+            <timed_event name="timer1" frame="0" repeat="0" action="next_slide" enabled="true" />
+        </layer>
+    </slide>
+    <slide name="slide_2" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="1" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 1 of 7</h3><p>You frequently refer customers to apple.com/batteries so they can learn more about managing their devices’ battery life. Where can you add this link so you can quickly open it later in Safari?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer> 
+    </slide>
+    <slide name="slide_3" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="3" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 2 of 7</h3><p>You have three follow-up calls to make to customers. Where can you find a list of your follow-up calls?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    <slide name="slide_4" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="2" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 3 of 7</h3><p>You are about to set your AUX state to Available, but you can't get to Case View. Which section do you need to review before you can start working with customers?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    <slide name="slide_5" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="4" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 4 of 7</h3><p>Your teammate just informed you of a new procedure that was just published. In which section can you find the new procedure?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    <slide name="slide_6" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="6" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 5 of 7</h3><p>After the new iPhone release, Engineering published an article to help Advisors resolve an issue that Apple is tracking. In which section can you find this article?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    <slide name="slide_7" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="7" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 6 of 7</h3><p>Your manager wants to review a case with you that you handled yesterday. Which section can you use to quickly locate the case in iLog?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    <slide name="slide_8" variables="">
+        <layer name="layer_variables" css_style="">
+            <variable name="correct_answer" value="5" />
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+        <layer name="layer_question" css_style="layer">
+            <html name="question_txt" x="0" y="0" w="100%" css_style="question_txt">
+                <![CDATA[<h3>Scenario 7 of 7</h3><p>Your manager asked you to determine whether you have any overdue training. Which section of Dashboard can you use to locate this information?</p>]]>
+            </html>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+              
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="item_1" x="0" y="19" w="147" h="543" css_style="item item_button" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" css_style="item item_button" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" css_style="item item_button" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" css_style="item item_button" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="468" w="464" h="94" css_style="item item_button" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" css_style="item item_button" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" css_style="item item_button" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left #!button_css[1]!#" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left #!button_css[2]!#" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right #!button_css[3]!#" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right #!button_css[4]!#" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="468" w="180" css_style="blue_button_active pointer-right #!button_css[5]!#" onMouseEnter="current_item_id=5:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left #!button_css[6]!#" onMouseEnter="current_item_id=6:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left #!button_css[7]!#" onMouseEnter="current_item_id=7:mouse_enter" onMouseLeave="mouse_leave" onClick="clear_exercise:user_answer=#!current_item_id!#:check_exercise"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+        <layer name="layer_feedback" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" css_style="layer_feedback" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_5" x="180" y="#!image_height!#-120" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[5]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_6" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[6]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_7" x="180" y="#!image_height!#-10" w="560" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[7]!#</div></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer_navigation" a="0">
+            <html name="prev_btn" w="24" h="48" a="100" css_style="nav_btn prev_btn" onClick="previous_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path fill="none" stroke="#0088CC" stroke-width="14" d="M49,95L10,50L49,5"/></svg></notrans>]]>
+            </html>
+            <html name="next_btn" w="24" h="48" a="100" css_style="nav_btn next_btn" onClick="next_slide">
+                <![CDATA[<notrans><svg version="1.1" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"><path d="M6 5 L45 50 L6 95" stroke="#0088CC" stroke-width="14" fill="none" /></svg></notrans>]]>
+            </html>
+            <html name="restart_btn" w="180" a="100" css_style="nav_btn blue_button_active restart_btn" onClick="jump(slide_init)">
+                <![CDATA[<notrans>#!restart_btn_txt!#</notrans>]]>
+            </html>
+            <html name="final_feedback" x="180" y="15" w="560" a="0" css_style="final_feedback feedback_positive">
+                <![CDATA[<notrans>#!final_feedback_txt!#</notrans>]]>
+            </html>
+        </layer>
+    </slide>
+    
+</data>

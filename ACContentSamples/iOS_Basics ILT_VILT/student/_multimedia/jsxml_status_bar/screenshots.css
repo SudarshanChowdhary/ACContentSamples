@@ -1,0 +1,45 @@
+.instructions{
+	font-family: "Lucida Grande", Helvetica, sans-serif;
+	font-size:10pt;
+	color: #444;
+	text-align: left;
+	cursor: pointer;
+	background: #ffffff;
+-webkit-font-smoothing: antialiased;
+}
+
+
+.hotspot{
+cursor: pointer;
+cursor: hand;
+
+}
+
+.hotspot:hover{
+border: 2px dotted #f78636;
+cursor: pointer;
+
+cursor: hand;
+-webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}	
+
+
+
+.popup{
+		font-family: "Lucida Grande", Helvetica, sans-serif;
+	font-size:10pt;
+	color: #535353;
+	text-align: center;
+line-height: 1.2em;	
+	background: #ffffff;
+-webkit-font-smoothing: antialiased;
+}
+.footnote{
+	font-size:8pt;
+		font-family: "Lucida Grande", Helvetica, sans-serif;
+color: #535353;
+	background: #ffffff;
+-webkit-font-smoothing: antialiased;
+}

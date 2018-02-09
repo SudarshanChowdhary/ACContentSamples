@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data w="1000" h="642" frame_rate="" background_color="" css_style="">
+    <slide name="slide_init">
+        <layer name="layer_variables" css_style="">
+            <variable name="make_required" value="true"></variable>
+            
+            <variable name="back_btn_txt">
+                <![CDATA[Back]]>
+            </variable>
+            <variable name="zoom_out_btn_txt">
+                <![CDATA[Zoom Out]]>
+            </variable>
+            
+            <variable name="image_width" value="1000"></variable>
+            <variable name="image_height" value="562"></variable>
+                  
+            <array name="slide_image_1" values="0::0::1000::auto"></array>
+            <array name="slide_visited" values="none::true::false::false::false::false::false::false::false::false::false::false"></array>
+            <variable name="slide_animation" value="false"></variable>
+            <array name="button_css" values="none::false::false::false::false::false::false::false"></array>
+            
+            <variable name="current_item_id" value="1"></variable>
+            <variable name="current_item" value="item_1"></variable>
+            <variable name="current_fade" value="fade_1"></variable>
+            <variable name="current_feedback" value="feedback_1"></variable>
+            
+            <action_set name="interaction_mark_complete" global="true">
+                <action do="if(#!make_required!#==true, mark_complete)" />
+                <action do="make_required=false" />
+            </action_set>
+
+            <action_set name="mouse_enter" global="true">
+                <action do="current_item=item_#!current_item_id!#" />
+                <action do="current_fade=fade_#!current_item_id!#" />
+                <action do="#!current_fade!#.setOpacity(100)" />
+                <action do="current_feedback=feedback_#!current_item_id!#" />
+                <action do="#!current_feedback!#.addCssStyle(show)" />            
+            </action_set>
+            <action_set name="mouse_leave" global="true">
+                <action do="current_item=item_#!current_item_id!#" />
+                <action do="current_fade=fade_#!current_item_id!#" />
+                <action do="#!current_fade!#.setOpacity(0)" />
+                <action do="current_feedback=feedback_#!current_item_id!#" />
+                <action do="#!current_feedback!#.removeCssStyle(show)" />
+            </action_set>  
+            
+            <action_set name="init_slide" global="true">
+                <action do="slide_visited[#!current_slide!#]=true" />
+                <action do="if(#!slide_image_1[0]!#!=#!image_1_vars[0]!# OR #!slide_image_1[1]!#!=#!image_1_vars[1]!# OR #!slide_image_1[2]!#!=#!image_1_vars[2]!# OR #!slide_image_1[3]!#!=#!image_1_vars[3]!#, slide_animation=true:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, init_slide_animation:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, wait(30))" />
+                <action do="layer_item.setOpacity(100)" />
+                <action do="check_completion"/>
+            </action_set>
+            
+            <action_set name="check_completion" global="true">
+                <action do="if(#!slide_visited[3]!#==true AND #!slide_visited[4]!#==true, button_css[1]=true)"/>
+                <action do="if(#!slide_visited[5]!#==true, button_css[2]=true)"/>
+                <action do="if(#!slide_visited[6]!#==true, button_css[3]=true)"/>
+                <action do="if(#!slide_visited[7]!#==true, button_css[4]=true)"/>
+                <action do="if(#!slide_visited[8]!#==true AND #!slide_visited[9]!#==true, button_css[5]=true)"/>
+                <action do="if(#!slide_visited[10]!#==true, button_css[6]=true)"/>
+                <action do="if(#!slide_visited[11]!#==true, button_css[7]=true)"/>
+                <action do="if(#!slide_visited[3]!#==true AND #!slide_visited[4]!#==true AND #!slide_visited[5]!#==true AND #!slide_visited[6]!#==true AND #!slide_visited[7]!#==true AND #!slide_visited[8]!#==true AND #!slide_visited[9]!#==true AND #!slide_visited[10]!#==true AND #!slide_visited[11]!#==true, interaction_mark_complete)"/>
+            </action_set>
+            
+            <action_set name="init_slide_animation" global="true">
+                <action do="bg_image.setOpacity(100)" />
+                <action do="layer_item.hide()" />
+                <action do="slide_image_1[0]=#!image_1_vars[0]!#:slide_image_1[1]=#!image_1_vars[1]!#:slide_image_1[2]=#!image_1_vars[2]!#:slide_image_1[3]=#!image_1_vars[3]!#" />
+                <action do="bg_image.setPosition(#!slide_image_1[0]!#, #!slide_image_1[1]!#, 15, swing):bg_image.setSize(#!slide_image_1[2]!#, #!slide_image_1[3]!#, 15, swing)" />
+                <action do="layer_item.show()" />
+                <action do="layer_item.setOpacity(100, 10, linear)" />
+            </action_set>
+            <timed_event name="timer1" frame="0" repeat="0" action="next_slide" enabled="true" />
+        </layer>
+    </slide>
+    
+    <slide name="slide_2">
+        <layer name="layer_variables">
+            <array name="button_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[My Links]]></value>
+                <!-- 2 -->
+                <value><![CDATA[Needs Attention]]></value>
+                <!-- 3 -->
+                <value><![CDATA[My Commitments]]></value>
+                <!-- 4 -->
+                <value><![CDATA[Recently Published]]></value>
+                <!-- 5 -->
+                <value><![CDATA[AppleLearn]]></value>
+                <!-- 6 -->
+                <value><![CDATA[Emerging Issues]]></value>
+                <!-- 7 -->
+                <value><![CDATA[My Handled Cases]]></value>
+            </array>
+            
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="0" y="19" w="147" h="543" a="100" css_style="item item_button" onMouseEnter="button_1.addCssStyle(on_hover)" onMouseLeave="button_1.removeCssStyle(on_hover)" onClick="jump(slide_3)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" a="100" css_style="item item_button" onMouseEnter="button_2.addCssStyle(on_hover)" onMouseLeave="button_2.removeCssStyle(on_hover)" onClick="jump(slide_5)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" a="100" css_style="item item_button" onMouseEnter="button_3.addCssStyle(on_hover)" onMouseLeave="button_3.removeCssStyle(on_hover)" onClick="jump(slide_6)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" a="100" css_style="item item_button" onMouseEnter="button_4.addCssStyle(on_hover)" onMouseLeave="button_4.removeCssStyle(on_hover)" onClick="jump(slide_7)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="467" w="464" h="95" a="100" css_style="item item_button" onMouseEnter="button_5.addCssStyle(on_hover)" onMouseLeave="button_5.removeCssStyle(on_hover)" onClick="jump(slide_8)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" a="100" css_style="item item_button" onMouseEnter="button_6.addCssStyle(on_hover)" onMouseLeave="button_6.removeCssStyle(on_hover)" onClick="jump(slide_10)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" a="100" css_style="item item_button" onMouseEnter="button_7.addCssStyle(on_hover)" onMouseLeave="button_7.removeCssStyle(on_hover)" onClick="jump(slide_11)"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left completed-#!button_css[1]!#" onMouseEnter="item_1.addCssStyle(on_hover)" onMouseLeave="item_1.removeCssStyle(on_hover)" onClick="jump(slide_3)"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left completed-#!button_css[2]!#" onMouseEnter="item_2.addCssStyle(on_hover)" onMouseLeave="item_2.removeCssStyle(on_hover)" onClick="jump(slide_5)"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right completed-#!button_css[3]!#" onMouseEnter="item_3.addCssStyle(on_hover)" onMouseLeave="item_3.removeCssStyle(on_hover)" onClick="jump(slide_6)"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right completed-#!button_css[4]!#" onMouseEnter="item_4.addCssStyle(on_hover)" onMouseLeave="item_4.removeCssStyle(on_hover)" onClick="jump(slide_7)"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="467" w="180" css_style="blue_button_active pointer-right completed-#!button_css[5]!#" onMouseEnter="item_5.addCssStyle(on_hover)" onMouseLeave="item_5.removeCssStyle(on_hover)" onClick="jump(slide_8)"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left completed-#!button_css[6]!#" onMouseEnter="item_6.addCssStyle(on_hover)" onMouseLeave="item_6.removeCssStyle(on_hover)" onClick="jump(slide_10)"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left completed-#!button_css[7]!#" onMouseEnter="item_7.addCssStyle(on_hover)" onMouseLeave="item_7.removeCssStyle(on_hover)" onClick="jump(slide_11)"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_3">
+        <layer name="layer_variables">
+            <array name="button_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                 <!-- 1 -->
+                <value><![CDATA[Continue]]></value>
+            </array>
+            
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>You use the My Links section to manage internal and external links you frequently use. This section doesn't contain any default links. You choose which links you add to this section.</p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>To quickly find links that you've added to the My Links section, you can use the search field.</p>]]></value>
+            </array>
+
+            <array name="image_1_vars" values="0::0::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="10" y="54" w="65" h="26" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="10" y="81" w="354" h="30" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="790" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_4)"><![CDATA[<notrans>#!button_txt[1]!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>    
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="385" y="44" w="605" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="385" y="73" w="605" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_4">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>You use the Edit button to add and remove links and organize them into folders you create.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="0::-878::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="10" y="522" w="60" h="31" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="back_btn" x="10" y="572" w="200" css_style="blue_button_active" onClick="jump(slide_3)"><![CDATA[<notrans>#!back_btn_txt!#</notrans>]]></html>
+            <html name="zoom_out_btn" x="220" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>      
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="10" y="495" w="605" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_5">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The Needs Attention section lists Bullet*News articles that you need to read and acknowledge before working with customers. </p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>You can click an article to expand it, or you can click Expand All to expand all the articles in this section. You might want to have all the articles closed so you can view other information in Dashboard. When all the articles are expanded, you can click Collapse All to collapse all of them.</p>]]></value>
+                <!-- 3 -->
+                <value><![CDATA[<p>Click View All to review Bullet*News articles in Article Viewer from the past 90 days.</p>]]></value>
+                <!-- 4 -->
+                <value><![CDATA[<p>Each article has the "Yes, I’ve Read It" button. Click this button to acknowledge you have read the article. You must take time to read and acknowledge all articles before you can work with customers. Reading these articles prepares you to provide the best customer experience.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-506::-40::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="5" y="15" w="203" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="836" y="15" w="89" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="926" y="15" w="69" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="12" y="474" w="977" h="61" css_style="item" refresh="none" onMouseEnter="current_item_id=4:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_3" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_3'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_3.x!#' y='#!item_3.y!#' width='#!item_3.w!#' height='#!item_3.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_3)'/> 
+					</svg></notrans>]]>
+            </html>  
+            <html name="fade_4" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_4'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_4.x!#' y='#!item_4.y!#' width='#!item_4.w!#' height='#!item_4.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_4)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="14" y="65" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="510" y="65" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="510" y="65" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_4" x="510" y="460" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[4]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_6">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The My Commitments section is for Tier 2 Advisors and specific queues such as Customer Relations. If you have the My Commitments section, you can use it to easily keep track of your follow-ups. My Commitments also lists escalated responses for email Advisors.</p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>The My Commitments section shows commitments that are due within two days. An alert badge indicates that a commitment is overdue. You should address overdue commitments as soon as possible. </p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-506::-591::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="5" y="18" w="223" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="18" y="60" w="53" h="52" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="510" y="18" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="510" y="60" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_7">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The Recently Published section lists SOPs, non-urgent Bullet*News, and ISCS content published in the last 90 days.</p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>To view all the recently published content in Article Viewer, click View All.</p>]]></value>
+                <!-- 3 -->
+                <value><![CDATA[<p>You can remove content from this section if you've already reviewed it. To remove content, hover your pointer over each piece of content, and then click Remove.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-506::-591::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="5" y="228" w="241" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="926" y="229" w="69" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="258" y="267" w="238" h="139" css_style="item" refresh="none" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_3" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_3'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_3.x!#' y='#!item_3.y!#' width='#!item_3.w!#' height='#!item_3.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_3)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="15" y="210" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="510" y="210" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="258" y="250" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_8">
+        <layer name="layer_variables">
+            <array name="button_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[Continue]]></value>
+            </array>
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The AppleLearn section lists new, pending, and overdue training. Apple is releasing AppleLearn to select groups at a time. You might not see the AppleLearn section at the time of the iLog 10 release.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-506::-674::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="5" y="368" w="163" h="36" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="790" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_9)"><![CDATA[<notrans>#!button_txt[1]!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="15" y="350" w="475" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-bottom">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_9">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The My Learning menu displays badges to indicate training that is due and overdue. After clicking the My Learning menu, you can view and open your assigned training in AppleLearn. My Learning shows up to 20 training notifications. You can open AppleLearn to see all assigned training.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-1560::0::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="875" y="5" w="53" h="39" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="back_btn" x="10" y="572" w="200" css_style="blue_button_active" onClick="jump(slide_8)"><![CDATA[<notrans>#!back_btn_txt!#</notrans>]]></html>
+            <html name="zoom_out_btn" x="220" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="450" y="60" w="535" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_10">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>Emerging issue articles are critical to helping customers. Use the Emerging Issues section to stay up to date on the latest issues and how to troubleshoot them. </p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>To open an emerging issue article in Article Viewer, click an article. </p>]]></value>
+                <!-- 3 -->
+                <value><![CDATA[<p>Click View All to open all of the emerging issue articles from the past 90 days in Article Viewer. You can keep articles open in Article Viewer throughout your day for quick reference. </p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-1560::0::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="451" y="53" w="113" h="28" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="451" y="82" w="532" h="35" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="910" y="53" w="73" h="28" css_style="item" refresh="none" onMouseEnter="current_item_id=3:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_3" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_3'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_3.x!#' y='#!item_3.y!#' width='#!item_3.w!#' height='#!item_3.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_3)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="451" y="132" w="532" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="451" y="132" w="532" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_3" x="451" y="132" w="532" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[3]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+    <slide name="slide_11">
+        <layer name="layer_variables">
+            <array name="feedback_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[<p>The My Handled Cases section displays cases you handled within the last 24 hours. The 24-hour period is based on when you log in and out of iLog.</p>]]></value>
+                <!-- 2 -->
+                <value><![CDATA[<p>Click the star to make a case a favorite. You can make up to 200 cases favorites. Click the star again to remove the case you no longer want to track.</p>]]></value>
+            </array>
+            <array name="image_1_vars" values="-1560::-878::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="451" y="51" w="126" h="28" css_style="item" refresh="none" onMouseEnter="current_item_id=1:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="955" y="105" w="28" h="28" css_style="item" refresh="none" onMouseEnter="current_item_id=2:mouse_enter" onMouseLeave="mouse_leave"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="svg_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="fade_1" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_1'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_1.x!#' y='#!item_1.y!#' width='#!item_1.w!#' height='#!item_1.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_1)'/> 
+					</svg></notrans>]]>
+            </html>
+            <html name="fade_2" x="0" y="0" w="100%" h="100%" a="0" css_style="svg_container" refresh=""> 
+                <![CDATA[<notrans><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 #!image_width!# #!image_height!#' xml:space='preserve'>
+                        <defs>
+							<mask id='cutout_square_2'>
+								<rect x='0' y='0' width='100%' height='100%' fill='white' />
+								<rect x='#!item_2.x!#' y='#!item_2.y!#' width='#!item_2.w!#' height='#!item_2.height!#' rx='3px' ry='3px' fill='black' /> 
+							</mask>
+						</defs>
+					<rect x='0' y='0' width='100%' height='100%' class='svg_fade' mask='url(#cutout_square_2)'/> 
+					</svg></notrans>]]>
+            </html>
+        </layer>
+        <layer name="layer" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="feedback_layer" background_color="transparent" permeable="true" scrollable="false" scroll_w="" scroll_h="">
+            <html name="feedback_1" x="451" y="230" w="532" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[1]!#</div></notrans>]]>
+            </html>
+            <html name="feedback_2" x="451" y="230" w="532" h="0" a="100" css_style="feedback_container" refresh=""> 
+                <![CDATA[<notrans><div class="feedback valign-top">#!feedback_txt[2]!#</div></notrans>]]>
+            </html>
+        </layer>      
+    </slide>
+</data>

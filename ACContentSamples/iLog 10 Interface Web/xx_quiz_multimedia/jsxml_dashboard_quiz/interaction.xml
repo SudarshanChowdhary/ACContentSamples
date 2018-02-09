@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data w="1000" h="642" frame_rate="" background_color="" css_style="">
+    <!-- @Developer:
+        Quiz interaction CANNOT send a mark complete to the LMS system. Please remove all of the mark_complete calls.
+    -->
+    <slide name="slide_init">
+        <layer name="layer_variables" css_style="">
+            <variable name="back_btn_txt">
+                <![CDATA[Back]]>
+            </variable>
+            <variable name="continue_btn_txt">
+                <![CDATA[Continue]]>
+            </variable>
+            <variable name="zoom_out_btn_txt">
+                <![CDATA[Zoom Out]]>
+            </variable>
+            
+            <variable name="image_width" value="1000"></variable>
+            <variable name="image_height" value="562"></variable>
+                  
+            <array name="slide_image_1" values="0::0::1000::auto"></array>
+            <variable name="slide_animation" value="false"></variable>
+
+            <action_set name="init_slide" global="true">
+                <action do="if(#!slide_image_1[0]!#!=#!image_1_vars[0]!# OR #!slide_image_1[1]!#!=#!image_1_vars[1]!# OR #!slide_image_1[2]!#!=#!image_1_vars[2]!# OR #!slide_image_1[3]!#!=#!image_1_vars[3]!#, slide_animation=true:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, init_slide_animation:temp=if-hack)" />
+                <action do="if(#!slide_animation!#==true, wait(30))" />
+                <action do="layer_item.setOpacity(100)" />
+            </action_set>
+            
+            <action_set name="init_slide_animation" global="true">
+                <action do="bg_image.setOpacity(100)" />
+                <action do="layer_item.hide()" />
+                <action do="slide_image_1[0]=#!image_1_vars[0]!#:slide_image_1[1]=#!image_1_vars[1]!#:slide_image_1[2]=#!image_1_vars[2]!#:slide_image_1[3]=#!image_1_vars[3]!#" />
+                <action do="bg_image.setPosition(#!slide_image_1[0]!#, #!slide_image_1[1]!#, 15, swing):bg_image.setSize(#!slide_image_1[2]!#, #!slide_image_1[3]!#, 15, swing)" />
+                <action do="layer_item.show()" />
+                <action do="layer_item.setOpacity(100, 10, linear)" />
+            </action_set>
+            <timed_event name="timer1" frame="0" repeat="0" action="next_slide" enabled="true" />
+        </layer>
+    </slide>
+    <slide name="slide_2">
+        <layer name="layer_variables">
+            <array name="button_txt">
+                <value><![CDATA[<notrans></notrans>]]></value>
+                <!-- 1 -->
+                <value><![CDATA[My Links]]></value>
+                <!-- 2 -->
+                <value><![CDATA[Needs Attention]]></value>
+                <!-- 3 -->
+                <value><![CDATA[My Commitments]]></value>
+                <!-- 4 -->
+                <value><![CDATA[Recently Published]]></value>
+                <!-- 5 -->
+                <value><![CDATA[Apple Learn]]></value>
+                <!-- 6 -->
+                <value><![CDATA[Emerging Issues]]></value>
+                <!-- 7 -->
+                <value><![CDATA[My Cases]]></value>
+            </array>
+            
+            <array name="image_1_vars" values="0::0::1000::auto"></array>
+        </layer>
+            
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="1" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="item_1" x="0" y="19" w="147" h="543" a="100" css_style="item item_button" onMouseEnter="button_1.addCssStyle(on_hover)" onMouseLeave="button_1.removeCssStyle(on_hover)" onClick="jump(slide_3)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_2" x="228" y="19" w="464" h="252" a="100" css_style="item item_button" onMouseEnter="button_2.addCssStyle(on_hover)" onMouseLeave="button_2.removeCssStyle(on_hover)" onClick="jump(slide_5)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_3" x="228" y="272" w="464" h="92" a="100" css_style="item item_button" onMouseEnter="button_3.addCssStyle(on_hover)" onMouseLeave="button_3.removeCssStyle(on_hover)" onClick="jump(slide_6)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_4" x="228" y="365" w="464" h="98" a="100" css_style="item item_button" onMouseEnter="button_4.addCssStyle(on_hover)" onMouseLeave="button_4.removeCssStyle(on_hover)" onClick="jump(slide_7)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_5" x="228" y="467" w="464" h="95" a="100" css_style="item item_button" onMouseEnter="button_5.addCssStyle(on_hover)" onMouseLeave="button_5.removeCssStyle(on_hover)" onClick="jump(slide_8)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_6" x="778" y="19" w="222" h="340" a="100" css_style="item item_button" onMouseEnter="button_6.addCssStyle(on_hover)" onMouseLeave="button_6.removeCssStyle(on_hover)" onClick="jump(slide_9)"><![CDATA[<notrans></notrans>]]></html>
+            <html name="item_7" x="778" y="360" w="222" h="202" a="100" css_style="item item_button" onMouseEnter="button_7.addCssStyle(on_hover)" onMouseLeave="button_7.removeCssStyle(on_hover)" onClick="jump(slide_10)"><![CDATA[<notrans></notrans>]]></html>
+            
+            <html name="button_1" x="5" y="120" w="180" css_style="blue_button_active pointer-top-left" onMouseEnter="item_1.addCssStyle(on_hover)" onMouseLeave="item_1.removeCssStyle(on_hover)" onClick="jump(slide_3)"><![CDATA[<notrans>#!button_txt[1]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_2" x="228" y="-15" w="180" css_style="blue_button_active pointer-bottom-left" onMouseEnter="item_2.addCssStyle(on_hover)" onMouseLeave="item_2.removeCssStyle(on_hover)" onClick="jump(slide_5)"><![CDATA[<notrans>#!button_txt[2]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_3" x="35" y="270" w="180" css_style="blue_button_active pointer-right" onMouseEnter="item_3.addCssStyle(on_hover)" onMouseLeave="item_3.removeCssStyle(on_hover)" onClick="jump(slide_6)"><![CDATA[<notrans>#!button_txt[3]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_4" x="35" y="365" w="180" css_style="blue_button_active pointer-right" onMouseEnter="item_4.addCssStyle(on_hover)" onMouseLeave="item_4.removeCssStyle(on_hover)" onClick="jump(slide_7)"><![CDATA[<notrans>#!button_txt[4]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_5" x="35" y="467" w="180" css_style="blue_button_active pointer-right" onMouseEnter="item_5.addCssStyle(on_hover)" onMouseLeave="item_5.removeCssStyle(on_hover)" onClick="jump(slide_8)"><![CDATA[<notrans>#!button_txt[5]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_6" x="788" y="180" w="200" css_style="blue_button_active pointer-top-left" onMouseEnter="item_6.addCssStyle(on_hover)" onMouseLeave="item_6.removeCssStyle(on_hover)" onClick="jump(slide_9)"><![CDATA[<notrans>#!button_txt[6]!#<span class="icon"></span></notrans>]]></html>
+            <html name="button_7" x="788" y="316" w="200" css_style="blue_button_active pointer-bottom-left" onMouseEnter="item_7.addCssStyle(on_hover)" onMouseLeave="item_7.removeCssStyle(on_hover)" onClick="jump(slide_10)"><![CDATA[<notrans>#!button_txt[7]!#<span class="icon"></span></notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_3">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="0::0::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+            <html name="continue_btn" x="790" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_4)"><![CDATA[<notrans>#!continue_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_4">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="0::-878::2560"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="back_btn" x="10" y="572" w="200" css_style="blue_button_active" onClick="jump(slide_3)"><![CDATA[<notrans>#!back_btn_txt!#</notrans>]]></html>
+            <html name="zoom_out_btn" x="220" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_5">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-506::-40::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_6">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-506::-591::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_7">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-506::-591::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>     
+    </slide>
+    <slide name="slide_8">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-506::-674::2190::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_9">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-1560::0::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+    <slide name="slide_10">
+        <layer name="layer_variables">
+            <array name="image_1_vars" values="-1560::-878::2560::auto"></array>
+        </layer>
+        <layer name="layer_image" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="100" css_style="layer">
+            <image file="images/dashboard_01.png" name="bg_image" x="#!slide_image_1[0]!#" y="#!slide_image_1[1]!#" w="#!slide_image_1[2]!#"></image> 
+            <timed_event name="timer1" frame="0" repeat="0" action="init_slide" enabled="true" />
+        </layer>
+        <layer name="layer_item" x="0" y="40" w="#!image_width!#" h="#!image_height!#" a="0" >
+            <html name="zoom_out_btn" x="10" y="572" w="200" css_style="blue_button_active" refresh="none" onClick="jump(slide_2)"><![CDATA[<notrans>#!zoom_out_btn_txt!#</notrans>]]></html>
+        </layer>
+    </slide>
+</data>

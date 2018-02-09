@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+	
+		<link href="playerresources/css/grid.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/reset.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgttypography.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgtbuttons.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgtprint.css" media="print" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/forms.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/css-classes.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="playerresources/css/sgt.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="playerresources/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" language="javascript">
+		
+		//Function uses regex to retrieve value of requested query string parameter
+		function getURLParam(parameter_name){
+			parameter_name = parameter_name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			var regex = new RegExp( "[\\?&]"+parameter_name+"=([^&#]*)" );
+			var results = regex.exec( window.location.href );
+			if( results == null ){
+				return "";
+			}else{
+				return results[1];
+			}
+		}
+		
+		$(document).ready(function(){	
+			//Load meta.xml file and create a page header with the filename contained within
+			//This also throws error if local xmlhttprequest not supported by this browser
+			$.ajax({
+                 type: "GET",
+                 url: "meta.xml",
+                 dataType: "xml",
+                 success: function(xml) {
+					var courseTitle = xml.getElementsByTagName("module_name_loc")[0].childNodes[0].nodeValue;
+					$('#includehead').html("<div id='framecontentTop'><div class='innertube'><h1 class='apple'><a href='http://training.info.apple.com/'>&#xF8FF;&nbsp;" + courseTitle + "</a></h1><hr class='up-hrule'/></div></div>");
+				 },
+				 error: function(){
+					alert ("Unable to load meta.xml page.  Please ensure that you are opening this course in Safari browser, and have the local file restrictions setting disabled in the Developer settings.  Otherwise, check formatting and closure of all tags in the meta.xml file.");	 
+				 }
+			});
+			
+			// Build navigation menu on the left side of the screen by loading the imsmanifest.xml file.  Traverse XML nodes to get the name of each organization
+			// including title and the URL of each page.  Add css formatting to allow for application of check marks next to each completd item
+			$.ajax({
+                 type: "GET",
+                 url: "imsmanifest.xml",
+                 dataType: "xml",
+                 success: function(xml) {
+
+					//FIRST STORE THE NAME OF EACH RESOURCE/URL PAIR IN AN ARRAY FOR FAST SEARCH
+					var resources = [];
+					for(x=0; x<xml.getElementsByTagName("resource").length; x++){
+						resources.push([xml.getElementsByTagName("resource")[x].getAttribute("identifier"), xml.getElementsByTagName("resource")[x].getAttribute("href")]);	
+					}
+					
+					//LOAD FIRST PAGE INTO CONTENT FRAME
+					frames['contentFrame'].location.href = resources[0][1];
+				
+				    //WRITE MODULE NAME OVER TOC LIST
+					//$("#tocList").append("<br><h4>" + xml.getElementsByTagName("title")[0].childNodes[0].nodeValue + "</h4>");//
+										
+					//GET ALL ITEMS
+					var numNodes = xml.getElementsByTagName("item").length;
+					for(x=0; x<numNodes; x++){
+						if(xml.getElementsByTagName("item")[x].getAttribute("identifierref") == null){ //if there is is no identifierref, this is a title
+							$("#tocList").append("<br><b>"+xml.getElementsByTagName("item")[x].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</b>");
+						}else{ //This is not a title, it is a sub-item
+							var currentIdRef = xml.getElementsByTagName("item")[x].getAttribute("identifierref") //Get object idRef
+							var currentName = xml.getElementsByTagName("item")[x].getElementsByTagName("title")[0].childNodes[0].nodeValue //Get object name
+							for(i=0; i<resources.length; i++){ //Search through resources[] array to find the url that corresponds to this item's idRef
+								if(resources[i][0] == currentIdRef){
+									var currentHref = resources[i][1];
+									$("#tocList").append("<li id='"+ currentHref.substr(0, currentHref.indexOf(".")) +"'><a href='" + currentHref + "?hideErrors=1' target='contentFrame'>"+ currentName +"</a></li>");  //Append TOC with current item and href, set div id to filename - extension
+									break;
+								}
+							}
+						}
+					}	
+					
+					//After TOC is built show quiz or not in the navigation depending on whether or not quiz query string set in browser window
+					if(getURLParam('showQuiz') == 1){
+						$("#tableofcontents").append("<h5>Quiz</h5><ul><li><a href='quiz.html?hideErrors=1' target='contentFrame'>Quiz</a></li></ul>");  //Append TOC with current item			
+					};
+				},
+				error: function(){
+					alert ("Unable to load imsmanifest.xml file.  Please ensure course has been SCORMed");
+				}
+			});
+			
+			//Toggle the debug menu
+			$("#debug_content").hide();
+			$("#debug_controls").on('click', function(){
+				$("#debug_content").toggle("fast");
+			});
+		});		
+		
+		//Start page mark complete marking
+		var lastPageMarked; //Hold name of last page that marked complete
+		var markCompleteMethods = new Array(); //Store methods used to mark current page complete
+		
+		function PageMarker(type, pageName){
+			var placeCheck = false; //Flag to add check mark
+			if(type == "load"){
+				$("#debug_content").html("This page automatically marks complete on load.");
+			}else if(type == "msco"){
+				$("#debug_content").html("This page has been marked complete by clicking on the final MSCO tab.");
+			}else if(type == "wait_msco"){
+				$("#debug_content").html("This page waits to mark complete until the learner clicks on the final MSCO tab.");
+			}else if(type == "wait_other"){
+				$("#debug_content").html("This page is waiting for an interaction to mark complete.");
+			}else if(type == "interaction_jsxml"){
+				$("#debug_content").html("This page has been marked complete by an interaction in an iframe.");
+			}else if(type == "interaction_native"){
+				$("#debug_content").html("This page has been marked complete by an interaction embedded directly in the page.");
+			}
+			//Check conditions to see if page marked complete multiple times
+			if(type.indexOf("wait_") == -1){ //If this call is not a 'wait' call
+				if(pageName == lastPageMarked){ //This page has been marked complete more than once
+					var checkBit = false;
+					for(var i=0; i<markCompleteMethods.length; i++){ //Search array to see if this method has already been used to mark page complete
+						if(markCompleteMethods[i] == type){
+							checkBit = true;
+							break;
+						}
+					}
+					if(checkBit == false){ //If this method has not been used to mark page complete, add it to the list
+						markCompleteMethods.push(type);
+					}
+					if(markCompleteMethods.length > 1){
+						$("#debug_content").append("<div style='color: red; line-height: 14px; margin-top: 5px;'>&#9888; Mark complete has been called on this page by more than one method.</div>");
+					}
+				}else{//First time marking this page complete
+					lastPageMarked = pageName; //Replace last page name with current page
+					markCompleteMethods.length = 0; //Reset mark complete methods array
+					markCompleteMethods.push(type); //Push current mark complete type
+					if(window.top.document.getElementById(pageName).innerHTML.indexOf("\u2714") == -1){
+						window.top.document.getElementById(pageName).innerHTML += "<span style='color: orange'> \u2714</span>";
+					}
+				}
+			}
+		}
+		</script>
+        
+	<title>iOS Support Training Content Player</title>
+	</head>
+	<body>
+	  <div class="container">
+			<!--<span id="includenav"></span>-->
+			<div id="framecontentLeft">
+				<!--<span id="includenav"></span>-->
+				<div class="innertube">
+					<!--<span id="includenav"></span>-->
+					<div id="tableofcontents">
+						<!--<span id="includenav"></span>-->
+                        <ul id="tocList"></ul>
+					</div>
+				</div>
+			</div>
+            <span id="includehead"></span>
+			<div id="maincontent">
+				<div id="content" style="height:100%; margin:0px; padding:0px;">
+                	<iframe name="contentFrame" width="100%" style="height:99%; margin:0px; padding:0px;"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="debug">
+			<style type="text/css">
+				#debug{
+					position: absolute;
+					bottom: 0px;
+					left: 10px;
+					width: 240px;
+				}
+				#debug_controls{
+					position: absolute;
+					top: -19px;
+					color: #000000;
+					font-weight: bold;
+					font-size: 12px;
+					height: 16px;
+					width: 20px;
+					text-align: center;
+					background-color: #f3f3f3;
+					border: solid 1px #cccccc;
+					border-bottom: none;
+					cursor: pointer;
+					padding-top: 3px;
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+				}
+				#debug_controls span:hover{
+					opacity: 0.8;
+				}
+				#debug_content{
+					font-size: 12px;
+					background-color: #f3f3f3;
+					border-top: solid 1px #cccccc;
+					border-left: solid 1px #cccccc;
+					border-right: solid 1px #cccccc;
+					padding: 10px;
+					border-top-right-radius: 3px;
+				}
+			</style>
+			<div id="debug_controls"><span>&#9881;</span></div>
+			<div id="debug_content"></div>
+		</div>
+	</body>
+</html>
